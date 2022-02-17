@@ -11,7 +11,7 @@ jobs:
       - uses: actions/checkout@v2
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
-          entrypoint: /www/firebase.json
+          entrypoint: ./www
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
           firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_ANNA_PORTFOLIO_9E8F9 }}'
           projectId: anna-portfolio-9e8f9
