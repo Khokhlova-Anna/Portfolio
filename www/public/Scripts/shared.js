@@ -27,3 +27,8 @@ function openEmail() {
     //TODO: change subject.
     window.open("mailto:annette.khokhlova@gmail.com?subject=Contact", '_blank')
 }
+
+function navigate(url) {
+    window.location = url;
+}
+
