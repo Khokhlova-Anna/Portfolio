@@ -2,19 +2,43 @@
  * Globals
  */
 .vh-20 {
-    height: 20vh;
+    min-height: 20vh;
 }
 
 .vh-30 {
-    height: 30vh;
+    min-height: 30vh;
 }
 
 .vh-50 {
-    height: 50vh;
+    min-height: 50vh;
 }
 
 .vh-70 {
-    height: 70vh;
+    min-height: 70vh;
+}
+
+.flex-1 {
+    flex: 1;
+}
+
+.flex-2 {
+    flex: 2;
+}
+
+.flex-3 {
+    flex: 3;
+}
+
+.flex-4 {
+    flex: 4;
+}
+
+.flex-5 {
+    flex: 5;
+}
+
+.shadow {
+    box-shadow: 0 .5rem 1rem rgba(255,255,255,.25) !important;
 }
 
 .bd-placeholder-img {
@@ -53,7 +77,6 @@ body {
 .main-container {
     max-width: 90em;
 }
-
 
 /*
  * Header
@@ -102,9 +125,7 @@ body {
 
 #btn-back-to-top {
     position: fixed;
-    width: 4rem;
-    height: 4rem;
-    bottom: 1rem;
+    bottom: 7.5rem;
     left: 1rem;
     display: none;
 }
