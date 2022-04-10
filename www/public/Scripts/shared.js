@@ -1,6 +1,6 @@
 $(document).ready(() => {
 
-    let scrollTopButton = document.getElementById("btn-back-to-top");
+    var scrollTopButton = document.getElementById("btn-back-to-top");
 
     window.onscroll = function () {
         scrollFunction();
