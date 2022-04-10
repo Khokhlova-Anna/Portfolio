@@ -18,6 +18,10 @@
             crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
+    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/css/splide.min.css" rel="stylesheet" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/js/splide.min.js"></script>
+
     <!-- Favicons -->
     <!-- <link rel="apple-touch-icon" href="https://getbootstrap.com/docs/5.1/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
     <link rel="icon" href="https://getbootstrap.com/docs/5.1/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
@@ -30,10 +34,8 @@
     <!-- Shared styles and scripts for this template -->
     <link href="./Styles/shared.css" rel="stylesheet">
     <script src="./Scripts/shared.js"></script>
-
     <!-- Custom styles and scripts for this template -->
-    <!--<link href="./Styles/about.css" rel="stylesheet">
-    <script src="./Scripts/about.js"></script>-->
+    <script src="./Scripts/helferproj.js"></script>
 
 </head>
 
@@ -85,37 +87,397 @@
             </div>
         </header>
 
-        <div class="main-container d-flex w-100 vh-30 p-3 mx-auto flex-column justify-content-start align-items-center">
-            <div class="d-flex flex-row justify-content-between align-items-center">
-                <h1>HELFER App</h1>
-                <p class="text-start">The goal of this case study was to create an online experience that is fast, easy, and intuitive: one that’s based on a deep understanding of their target users.</p>
+        <div class="main-container d-flex w-100 mx-auto flex-column justify-content-start align-items-center">
+            <div class="row justify-content-md-center py-5">
+                <h1 class="col col-lg-4">HELFER Training Apps</h1>
+                <p class="text-start col col-lg-8 lh-lg">
+                    The goal of this case study was to create two linked ergonomic applications to:
+                    <br />- optimize, organize and simplify the everyday work of the trainer ;                     <br />- facilitate the search and selection of the ideal coach and ease following the training programs by trainees.
+                </p>
             </div>
-            <div class="d-flex flex-row justify-content-between align-items-center">
-                <div class="d-flex flex-column justify-content-start align-items-start">
-                    <p>ROLE</p>
-                    <p>UX Research</p>
-                    <p>Analysis</p>
-                    <p>Design</p>
-                    <p>Prototyping</p>
-                    <p>Wireframing</p>
+            <div class="container d-flex flex-row justify-content-between align-items-start py-5">
+                <div class="d-flex flex-column justify-content-start align-items-start p-1">
+                    <p class="m-0 lh-lg text-start">ROLE</p>
+                    <p class="m-0 lh-lg text-start">UX Research</p>
+                    <p class="m-0 lh-lg text-start">Design</p>
+                    <p class="m-0 lh-lg text-start">Prototyping</p>
+                    <p class="m-0 lh-lg text-start">Wireframing</p>
                 </div>
-                <div class="d-flex flex-column justify-content-start align-items-start">
-                    <p>TEAM</p>
-                    <p>Self-Directed</p>
+                <div class="d-flex flex-column justify-content-start align-items-start p-1">
+                    <p class="m-0 lh-lg text-start">TEAM</p>
+                    <p class="m-0 lh-lg text-start">Self-Directed</p>
                 </div>
-                <div class="d-flex flex-column justify-content-start align-items-start">
-                    <p>CLIENTS</p>
-                    <p>FlyUX Airlines</p>
-                    <p>(Startup, Potential)</p>
+                <div class="d-flex flex-column justify-content-start align-items-start p-1">
+                    <p class="m-0 lh-lg text-start">CLIENTS</p>
+                    <p class="m-0 lh-lg text-start">Private client (coach)</p>
                 </div>
-                <div class="d-flex flex-column justify-content-start align-items-start">
-                    <p>YEAR</p>
-                    <p>Winter 2020</p>
+                <div class="d-flex flex-column justify-content-start align-items-start p-1">
+                    <p class="m-0 lh-lg text-start">YEAR</p>
+                    <p class="m-0 lh-lg text-start">Autumn 2021 - Now</p>
                 </div>
-                <div class="d-flex flex-row justify-content-between align-items-center"></div>
+            </div>
+            <div class="container d-flex flex-column justify-content-between align-items-start py-5">
+                <h1 class="text-start">Trainer app :</h1>
+            </div>
+            <div class="container d-flex flex-column justify-content-between align-items-start py-5">
+                <svg class="bd-placeholder-img bd-placeholder-img-lg img-fluid mx-auto" width="1320"
+                     height="660" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 1320x660"
+                     preserveAspectRatio="xMidYMid slice" focusable="false">
+                    <title>Placeholder</title>
+                    <rect width="100%" height="100%" fill="#eee"></rect>
+                    <text x="50%" y="50%" fill="#aaa"
+                          dy=".3em">1320x660</text>
+                </svg>
+            </div>
+            <div class="container d-flex flex-column justify-content-between align-items-start py-5">
+                <h2 class="text-start">Problem :</h2>
+                <p class="m-0 mb-3 lh-lg text-start">
+                    One of the most difficult and responsible tasks of a coach is to create a personal training program, taking into account the characteristics of the trainee and follow their training progress. With many clients, creating personal training programs for everyone and managing their achievements can be a real challenge.
+                </p>
+                <p class="m-0 mb-3 lh-lg text-start">
+                    After research four main components which made a negative user experience of the initial version of the app were defined :
+                </p>
+                <p class="m-0 mb-3 lh-lg text-start">
+                    - Unclear user flow that was understood by client himself only;
+                    <br />- Application only covered a part of the whole work process (payment and sending of each training were managed separately);
+                    <br />- Creating a personal training was an unmotivated complicated process that took a lot of time (about 30 minutes each) that made trainer unable to manage a big number of clients;
+                    <br />- Lack of responsiveness, as a result impossibility to use application on mobile devices.
+                </p>
+            </div>
+            <div class="container d-flex flex-column justify-content-between align-items-start py-5">
+                <h2 class="text-start">Solution :</h2>
+                <p class="m-0 mb-3 lh-lg text-start">
+                    Create a convenient responsive ergonomic tool that allows coaches to train online and in the gym a large number of people at the same time.
+                </p>
+                <p class="m-0 mb-3 lh-lg text-start">
+                    Goals :
+                    <br />- Transform the creation of workouts from monotonous and tedious work into a streamlined process;
+                    <br />- Cover and facilitate all subsequent work with students.
+                </p>
+                <p class="m-0 mb-3 lh-lg text-start">
+                    Objectives :
+                    <br />- Decrease a time for creating a personal training (make it less than 10 minutes);
+                    <br />- Make interface more intuitive so that it can be understood and used by any other coach;
+                    <br />- Include payment process and the automatic training sending.
+                </p>
+            </div>
+            <div class="container d-flex flex-row justify-content-start align-items-start py-5">
+                <h1>Initial application</h1>
+            </div>
+            <div class="container d-flex flex-column justify-content-between align-items-start py-5">
+                <h2 class="text-start">Mobile</h2>
+                <div class="row justify-content-md-center">
+                    <div class="col-lg-3 py-5">
+                        <img src="./images/helfer/initial_app_mobile1.png" class="ms-3">
+                    </div>
+                    <div class="col-lg-3 py-5">
+                        <img src="./images/helfer/initial_app_mobile2.png" class="ms-3">
+                    </div>
+                    <div class="col-lg-3 py-5">
+                        <img src="./images/helfer/initial-app-desktop/Screenshot_1.png" class="ms-3">
+                        <img src="./images/helfer/initial-app-desktop/Screenshot_2.png" class="ms-3">
+                        <img src="./images/helfer/initial-app-desktop/Screenshot_3.png" class="ms-3">
+                        <img src="./images/helfer/initial-app-desktop/Screenshot_4.png" class="ms-3">
+                    </div>
+                    <div class="col-lg-3 py-5">
+                        <img src="./images/helfer/initial-app-desktop/Screenshot_5.png" class="ms-3">
+                        <img src="./images/helfer/initial-app-desktop/Screenshot_6.png" class="ms-3">
+                        <img src="./images/helfer/initial-app-desktop/Screenshot_7.png" class="ms-3">
+                    </div>
+                </div>
+            </div>
+            <div class="container d-flex flex-column justify-content-between align-items-start py-5">
+                <h2 class="text-start">Desktop</h2>
+                <div id="splide1" class="splide w-100">
+                    <div class="splide__track">
+                        <ul class="splide__list">
+                            <li class="splide__slide p-4">
+                                <div class="splide__slide__container">
+                                    <img src="./images/helfer/initial-app-desktop/Screenshot_1.png" />
+                                </div>
+                            </li>
+                            <li class="splide__slide p-4">
+                                <div class="splide__slide__container">
+                                    <img src="./images/helfer/initial-app-desktop/Screenshot_2.png" />
+                                </div>
+                            </li>
+                            <li class="splide__slide p-4">
+                                <div class="splide__slide__container">
+                                    <img src="./images/helfer/initial-app-desktop/Screenshot_3.png" />
+                                </div>
+                            </li>
+                            <li class="splide__slide p-4">
+                                <div class="splide__slide__container">
+                                    <img src="./images/helfer/initial-app-desktop/Screenshot_4.png" />
+                                </div>
+                            </li>
+                            <li class="splide__slide p-4">
+                                <div class="splide__slide__container">
+                                    <img src="./images/helfer/initial-app-desktop/Screenshot_5.png" />
+                                </div>
+                            </li>
+                            <li class="splide__slide p-4">
+                                <div class="splide__slide__container">
+                                    <img src="./images/helfer/initial-app-desktop/Screenshot_6.png" />
+                                </div>
+                            </li>
+                            <li class="splide__slide p-4">
+                                <div class="splide__slide__container">
+                                    <img src="./images/helfer/initial-app-desktop/Screenshot_7.png" />
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="container d-flex flex-row justify-content-start align-items-start py-5">
+                <h1>Sketches</h1>
+            </div>
+            <div class="container d-flex flex-row justify-content-start align-items-start py-5">
+                <div class="row justify-content-md-center">
+                    <div class="col-lg-3 py-5">
+                        <img src="./images/helfer/sketches/1.png" class="ms-3">
+                    </div>
+                    <div class="col-lg-3 py-5">
+                        <img src="./images/helfer/sketches/2.png" class="ms-3">
+                    </div>
+                    <div class="col-lg-3 py-5">
+                        <img src="./images/helfer/sketches/3.png" class="ms-3">
+                    </div>
+                    <div class="col-lg-3 py-5">
+                        <img src="./images/helfer/sketches/4.png" class="ms-3">
+                    </div>
+                </div>
+            </div>
+            <div class="container d-flex flex-row justify-content-start align-items-start py-5">
+                <h1>Medium-Fidelity wireframes for registration</h1>
+            </div>
+            <div class="container d-flex flex-column justify-content-start align-items-start py-5">
+                <div class="row w-100 justify-content-md-center">
+                    <div class="col-lg-4 py-2">
+                        <img src="./images/helfer/wireframes-registration/Desktop_1.png" class="ms-3">
+                    </div>
+                    <div class="col-lg-4 py-2">
+                        <img src="./images/helfer/wireframes-registration/Desktop_2.png" class="ms-3">
+                    </div>
+                    <div class="col-lg-4 py-2">
+                        <img src="./images/helfer/wireframes-registration/Desktop_3.png" class="ms-3">
+                    </div>
+                </div>
+                <div class="row w-100 justify-content-md-center">
+                    <div class="col-lg-4 py-2">
+                        <img src="./images/helfer/wireframes-registration/Desktop_4.png" class="ms-3">
+                    </div>
+                    <div class="col-lg-4 py-2">
+                        <img src="./images/helfer/wireframes-registration/Desktop_5.png" class="ms-3">
+                    </div>
+                    <div class="col-lg-4 py-2">
+                        <img src="./images/helfer/wireframes-registration/Desktop_6.png" class="ms-3">
+                    </div>
+                </div>
+                <div class="row w-100 justify-content-md-center">
+                    <div class="col-lg-4 py-2">
+                        <img src="./images/helfer/wireframes-registration/Desktop_7.png" class="ms-3">
+                    </div>
+                    <div class="col-lg-4 py-2">
+                        <img src="./images/helfer/wireframes-registration/Desktop_8.png" class="ms-3">
+                    </div>
+                    <div class="col-lg-4 py-2">
+                        <img src="./images/helfer/wireframes-registration/Desktop_9.png" class="ms-3">
+                    </div>
+                </div>
+            </div>
+            <div class="container d-flex flex-row justify-content-start align-items-start py-5">
+                <h1>High fidelity app mockup, prototype</h1>
+            </div>
+            <div class="container d-flex flex-column justify-content-start align-items-start py-5">
+                <div class="row w-100 justify-content-md-center">
+                    <div class="col-lg-4 py-4">
+                        <h3>Creation of an exercise</h3>
+                    </div>
+                    <div class="col-lg-4 py-4">
+                        <h3>Creation of the training program</h3>
+                    </div>
+                    <div class="col-lg-4 py-4">
+                        <h3>Registration, my account</h3>
+                    </div>
+                </div>
+                <div class="row w-100 justify-content-md-center">
+                    <div class="col-lg-4 py-4">
+                        <svg class="bd-placeholder-img bd-placeholder-img-lg img-fluid mx-auto" width="494"
+                             height="734" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 494x734"
+                             preserveAspectRatio="xMidYMid slice" focusable="false">
+                            <title>Placeholder</title>
+                            <rect width="100%" height="100%" fill="#eee"></rect>
+                            <text x="50%" y="50%" fill="#aaa"
+                                  dy=".3em">494x734</text>
+                        </svg>
+                    </div>
+                    <div class="col-lg-4 py-4">
+                        <svg class="bd-placeholder-img bd-placeholder-img-lg img-fluid mx-auto" width="494"
+                             height="734" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 494x734"
+                             preserveAspectRatio="xMidYMid slice" focusable="false">
+                            <title>Placeholder</title>
+                            <rect width="100%" height="100%" fill="#eee"></rect>
+                            <text x="50%" y="50%" fill="#aaa"
+                                  dy=".3em">494x734</text>
+                        </svg>
+                    </div>
+                    <div class="col-lg-4 py-4">
+                        <svg class="bd-placeholder-img bd-placeholder-img-lg img-fluid mx-auto" width="494"
+                             height="734" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 494x734"
+                             preserveAspectRatio="xMidYMid slice" focusable="false">
+                            <title>Placeholder</title>
+                            <rect width="100%" height="100%" fill="#eee"></rect>
+                            <text x="50%" y="50%" fill="#aaa"
+                                  dy=".3em">494x734</text>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="container d-flex flex-row justify-content-start align-items-start py-5">
+                <h1>Results :</h1>
+            </div>
+            <div class="container d-flex flex-column justify-content-between align-items-start py-5">
+                <p class="m-0 mb-3 lh-lg text-start">
+                    1. The process from A to Z is optimized in such a way that both the creation of workouts and the management of trainees and other daily tasks that a coach has to solve require a minimum amount of time and effort.
+                    <br />2. Uncertainty reduced by automated secured payment and configurable automated workout sending.
+                    <br />3. Being both simple and convenient, the use of the product, in turn, also led to an improvement in the quality of the workouts compiled and reduced the workload of the trainer.
+                </p>
+            </div>
+            <div class="container d-flex flex-column justify-content-between align-items-start py-5">
+                <h1 class="text-start">Trainee app :</h1>
+            </div>
+            <div class="container d-flex flex-column justify-content-between align-items-start py-5">
+                <svg class="bd-placeholder-img bd-placeholder-img-lg img-fluid mx-auto" width="1320"
+                     height="660" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 1320x660"
+                     preserveAspectRatio="xMidYMid slice" focusable="false">
+                    <title>Placeholder</title>
+                    <rect width="100%" height="100%" fill="#eee"></rect>
+                    <text x="50%" y="50%" fill="#aaa"
+                          dy=".3em">1320x660</text>
+                </svg>
+            </div>
+            <div class="container d-flex flex-column justify-content-between align-items-start py-5">
+                <h2 class="text-start">Problem :</h2>
+                <p class="m-0 mb-3 lh-lg text-start">
+                    With the increase of the number of “easy certification” it becomes more and more challenging to find a good trainer with personal approach. And even after finding the one it is hard to stay motivated throughout the training process without clear program and workout structure and feedback.
+                </p>
+                <p class="m-0 mb-3 lh-lg text-start">
+                    After research four main components which made a negative user experience of the initial version of the app were defined :
+                </p>
+                <p class="m-0 mb-3 lh-lg text-start">
+                    After research through the trainees these are the main statements :                     <br />- Lack of information about trainers knowledge and experience makes it hard to choose one;                     <br />- Most of the online coaching systems propose generic programs that are not personalized;                     <br />- Having no feedback makes it scary to do several exercises in order not to get traumatized;                     <br />- Lack of monitoring of the progress from the trainer side leads to the decrease of the motivation.
+                </p>
+            </div>
+            <div class="container d-flex flex-column justify-content-between align-items-start py-5">
+                <h2 class="text-start">Solution :</h2>
+                <p class="m-0 mb-3 lh-lg text-start">
+                    Create an application where trainees could easily find a trainer they need, get a personal training program and a quality monitoring by a coach.
+                </p>
+                <p class="m-0 mb-3 lh-lg text-start">
+                    Goal :
+                    <br />- Allow students to learn from unique specialists, select the ideal coach, taking into account individual needs and receive high-quality personalized training programs.
+                </p>
+                <p class="m-0 mb-3 lh-lg text-start">
+                    Objectives :
+                    <br />- Facilitate the search and selection of the trainer by personal criteria;
+                    <br />- Save trainees time by optimizing the program order process;
+                    <br />- Make it easy for a student to stay in connection with trainer and receive feedback and motivation.
+                </p>
+            </div>
+            <div class="container d-flex flex-column justify-content-between align-items-start py-5">
+                <h1 class="text-start">First designs</h1>
+            </div>
+            <div class="container d-flex flex-column justify-content-between align-items-start py-5">
+                <p class="m-0 mb-3 lh-lg text-start">
+                    A general problem of the initial designs was the lack of design consistency, they were incomplete and did not reflect all the needed HMI interactions. My solution was to unify the entire interface and think through and provide every screen state throughout the user flow.
+                </p>
+            </div>
+            <div class="container d-flex flex-row justify-content-start align-items-start py-5">
+                <div class="row w-100 justify-content-md-center">
+                    <div class="col-lg-3">
+                        <img src="./images/helfer/first-designs/Login.png" class="ms-3 py-2">
+                        <img src="./images/helfer/first-designs/Search (results).png" class="ms-3 py-2">
+                        <img src="./images/helfer/first-designs/Schedule (empty).png" class="ms-3 py-2">
+                    </div>
+                    <div class="col-lg-3">
+                        <img src="./images/helfer/first-designs/Sign up.png" class="ms-3 py-2">
+                        <img src="./images/helfer/first-designs/Trainer profile.png" class="ms-3 py-2">
+                        <img src="./images/helfer/first-designs/Schedule list.png" class="ms-3 py-2">
+                    </div>
+                    <div class="col-lg-3">
+                        <img src="./images/helfer/first-designs/Email login.png" class="ms-3 py-2">
+                        <img src="./images/helfer/first-designs/Search (empty).png" class="ms-3 py-2">
+                        <img src="./images/helfer/first-designs/Chat.png" class="ms-3 py-2">
+                        <img src="./images/helfer/first-designs/Messages list.png" class="ms-3 py-2">
+                    </div>
+                    <div class="col-lg-3">
+                        <img src="./images/helfer/first-designs/Email register.png" class="ms-3 py-2">
+                        <img src="./images/helfer/first-designs/Training.png" class="ms-3 py-2">
+                    </div>
+                </div>
+            </div>
+            <div class="container d-flex flex-column justify-content-between align-items-start py-5">
+                <h1 class="text-start">High fidelity app mockup, prototype</h1>
+            </div>
+            <div class="container d-flex flex-column justify-content-start align-items-start py-5">
+                <div class="row w-100 justify-content-md-center">
+                    <div class="col-lg-4 py-4">
+                        <h3>Creation of an exercise</h3>
+                    </div>
+                    <div class="col-lg-4 py-4">
+                        <h3>Creation of the training program</h3>
+                    </div>
+                    <div class="col-lg-4 py-4">
+                        <h3>Registration, my account</h3>
+                    </div>
+                </div>
+                <div class="row w-100 justify-content-md-center">
+                    <div class="col-lg-4 py-4">
+                        <svg class="bd-placeholder-img bd-placeholder-img-lg img-fluid mx-auto" width="494"
+                             height="734" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 494x734"
+                             preserveAspectRatio="xMidYMid slice" focusable="false">
+                            <title>Placeholder</title>
+                            <rect width="100%" height="100%" fill="#eee"></rect>
+                            <text x="50%" y="50%" fill="#aaa"
+                                  dy=".3em">494x734</text>
+                        </svg>
+                    </div>
+                    <div class="col-lg-4 py-4">
+                        <svg class="bd-placeholder-img bd-placeholder-img-lg img-fluid mx-auto" width="494"
+                             height="734" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 494x734"
+                             preserveAspectRatio="xMidYMid slice" focusable="false">
+                            <title>Placeholder</title>
+                            <rect width="100%" height="100%" fill="#eee"></rect>
+                            <text x="50%" y="50%" fill="#aaa"
+                                  dy=".3em">494x734</text>
+                        </svg>
+                    </div>
+                    <div class="col-lg-4 py-4">
+                        <svg class="bd-placeholder-img bd-placeholder-img-lg img-fluid mx-auto" width="494"
+                             height="734" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 494x734"
+                             preserveAspectRatio="xMidYMid slice" focusable="false">
+                            <title>Placeholder</title>
+                            <rect width="100%" height="100%" fill="#eee"></rect>
+                            <text x="50%" y="50%" fill="#aaa"
+                                  dy=".3em">494x734</text>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="container d-flex flex-row justify-content-start align-items-start py-5">
+                <h1>Results :</h1>
+            </div>
+            <div class="container d-flex flex-column justify-content-between align-items-start py-5">
+                <p class="m-0 mb-3 lh-lg text-start">
+                    1. Product is usable and helps to find a coach with ease. The search is categorised and has a clear useful filter that can be used to narrow the results.
+                    <br />2. The whole process is well thought-through :  screens and screen states cover all the possible scenarios and user flows.
+                    <br />3. User is provided with feedback from the trainer and an organized personalized training plan that is easy to follow with the app, as well as set and reach sports objectives.
+                    <br />4. The ordering of the programm and payment is secured and transparent.
+                </p>
             </div>
         </div>
-
         <div class="vh-20 w-100 d-flex main-container align-items-center justify-content-center flex-wrap flex-column">
             <p class="fs-2 text-center">Do I have your attention?</p>
             <a class="fs-2 text-center text-reset text-decoration-none btn btn-lg btn-primary" role="button" data-bs-toggle="button" href="mailto:annette.khokhlova@gmail.com?subject=Contact" onclick="openEmail()">Hit me up</a>
