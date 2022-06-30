@@ -18,6 +18,10 @@
             crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
+    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/css/splide.min.css" rel="stylesheet" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/js/splide.min.js"></script>
+
     <!-- Favicons -->
     <!-- <link rel="apple-touch-icon" href="https://getbootstrap.com/docs/5.1/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
     <link rel="icon" href="https://getbootstrap.com/docs/5.1/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
@@ -49,7 +53,7 @@
                 </nav>
 
                 <div class="p-1 d-flex flex-row">
-                    <a class="fs-5 px-3 justify-content-center align-items-end text-reset text-decoration-none btn btn-sm btn-primary" role="button" data-bs-toggle="button" href="mailto:annette.khokhlova@gmail.com?subject=Contact" onclick="openEmail()">Contact</a>
+                    <a id="contact-button" class="fs-5 px-3 justify-content-center align-items-end text-reset text-decoration-none btn btn-sm btn-primary" role="button" data-bs-toggle="button" href="mailto:annette.khokhlova@gmail.com?subject=Contact" onclick="openEmail()">Contact</a>
                     <ul class="navbar-nav px-3 justify-content-center">
                         <li class="nav-item dropdown">
                             <a class="dropdown-toggle text-decoration-none fs-5 text-muted" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -117,15 +121,12 @@
                 <h2 class="text-start">Design Challenge (Task):</h2>
                 <p class="text-start lh-lg">As the industry is full of unmotivating and complicated In-app flight booking process, the primary task was to analyze what other airlines are doing, learn from their mistakes and take inspiration from the things they do right in order to design a usable fight booking process for a new mobile app for Fly UX. </p>
             </div>
-            <div class="container d-flex flex-column justify-content-between align-items-start py-5">
-                <svg class="bd-placeholder-img bd-placeholder-img-lg img-fluid mx-auto" width="1320"
-                     height="660" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 1320x660"
-                     preserveAspectRatio="xMidYMid slice" focusable="false">
-                    <title>Placeholder</title>
-                    <rect width="100%" height="100%" fill="#eee"></rect>
-                    <text x="50%" y="50%" fill="#aaa"
-                          dy=".3em">1320x660</text>
-                </svg>
+            <div id="flyux-preview-container" class="container d-flex flex-row align-items-start py-5">
+                <img id="flyux-preview-image-1" src="./images/flyux/FlyuxOnMobile/Mobile5.png" class="flyux-preview-image" alt="" />
+                <img id="flyux-preview-image-2" src="./images/flyux/FlyuxOnMobile/Mobile2.png" class="flyux-preview-image" alt="" />
+                <img id="flyux-preview-image-3" src="./images/flyux/FlyuxOnMobile/Mobile1.png" class="flyux-preview-image" alt="" />
+                <img id="flyux-preview-image-4" src="./images/flyux/FlyuxOnMobile/Mobile3.png" class="flyux-preview-image" alt="" />
+                <img id="flyux-preview-image-5" src="./images/flyux/FlyuxOnMobile/Mobile4.png" class="flyux-preview-image" alt="" />
             </div>
         </div>
 
@@ -135,16 +136,8 @@
             </div>
             <div class="container d-flex flex-row justify-content-start align-items-start">
                 <div class="row justify-content-md-center">
-                    <div class="col py-5 image-stack outer">
-                        <img src="./images/flyux/flyux1.png" style="z-index:6;" class="img-fluid img-small-item mx-auto shadow image-stack-item image-item-1" alt="...">
-                        <img src="./images/flyux/flyux2.png" style="z-index:5;" class="img-fluid img-small-item mx-auto shadow image-stack-item image-item-2" alt="..." />
-                        <img src="./images/flyux/flyux3.png" style="z-index:4;" class="img-fluid img-small-item mx-auto shadow image-stack-item image-item-3" alt="..." />
-                        <img src="./images/flyux/flyux4.png" style="z-index:3;" class="img-fluid img-small-item mx-auto shadow image-stack-item image-item-4" alt="..." />
-                        <img src="./images/flyux/flyux5.png" style="z-index:2;" class="img-fluid img-small-item mx-auto shadow image-stack-item image-item-5" alt="..." />
-                        <img src="./images/flyux/flyux6.png" style="z-index:1;" class="img-fluid img-small-item mx-auto shadow image-stack-item image-item-6" alt="..." />
-                    </div>
                     <div class="col py-5 image-col">
-                        <img id="ux-research-image-player-item" src="./images/flyux/flyux1.png" class="img-fluid img-small-item mx-auto shadow" alt="...">
+                        <img id="ux-research-image-player-item" src="./images/flyux/flyux1.png" class="img-fluid mx-auto shadow" alt="...">
                     </div>
                     <div class="col py-5">
                         <p class="m-0 mb-3 lh-lg text-start">
@@ -165,8 +158,8 @@
             </div>
             <div class="container d-flex flex-row justify-content-start align-items-start">
                 <div class="row justify-content-md-center">
-                    <div class="col py-5 video-col">
-                        <img src="./images/flyux/flyux1.png" class="img-fluid img-small-item mx-auto shadow" alt="...">
+                    <div class="col py-5 video-col usability-test-player-column">
+                        <iframe id="usability-test-player" src="https://drive.google.com/file/d/1tbMhr75n9j0KCf2C0zTb7M2GhFUI52N1/preview?start=1" width="512" height="287" allow="autoplay"></iframe>
                     </div>
                     <div class="col py-5">
                         <p class="m-0 mb-3 lh-lg text-start">For the richer insights directly from the user <span class="fw-bold">depth interview and a comparative usability test</span> were conducted to learn more about his <span class="bg-info bg-opacity-50">goals, behaviours, context, positive interactions, and pain points.</span></p>
@@ -180,7 +173,7 @@
             </div>
             <div class="container d-flex flex-row justify-content-start align-items-start">
                 <!--TODO onclick open in new window image-->
-                <img src="./images/flyux/flyux_ux_1.png" class="img-fluid img-small-item mx-auto shadow" alt="...">
+                <img src="./images/flyux/flyux_ux_1.png" class="img-fluid mx-auto shadow" alt="">
             </div>
 
             <div class="container d-flex flex-row justify-content-start align-items-start py-5">
@@ -197,11 +190,13 @@
                     <br />
                     <p class="m-0 mb-3 lh-lg text-start">
                         Objectives :
-                 <br />- Review the research 
-                 <br />- Put structure on qualitative research data through the collaborative analysis
+                        <br />- Review the research
+                        <br />- Put structure on qualitative research data through the collaborative analysis
                     </p>
-                    <p class="m-0 mb-3 lh-lg text-start">Process (remote, during lockdown) :
-                    <br />1. Research data was shared with the participants. </p>
+                    <p class="m-0 mb-3 lh-lg text-start">
+                        Process (remote, during lockdown) :
+                        <br />1. Research data was shared with the participants.
+                    </p>
                     <p class="m-0 mb-3 lh-lg text-start">2. During the review of the research data notes were made by each participant about anything relevant to describing the current user experience: goals, behaviours, pain points, mental models, and contextual information.  </p>
                     <p class="m-0 lh-lg text-start">3. At the end all the notes were gathered on a remote board Post-it by Post-it and organized by clear groups that correspond to experiences that need to be addressed during a design of the website. </p>
                 </div>
@@ -209,15 +204,15 @@
             </div>
 
             <div class="container d-flex flex-row justify-content-start align-items-start py-5">
-                <div class="row justify-content-betwee">
-                    <img src="./images/flyux/flyux_analysis_1.png" class="img-fluid mx-auto col-lg-4" alt="...">
-                    <img src="./images/flyux/flyux_analysis_2.png" class="img-fluid mx-auto col-lg-4" alt="...">
-                    <img src="./images/flyux/flyux_analysis_3.png" class="img-fluid mx-auto col-lg-4" alt="...">
+                <div class="row justify-content-between">
+                    <img src="./images/flyux/photos_affinity_flyux_process/20200411_151921.jpg" class="img-fluid mx-auto col-lg-4 py-2" alt="">
+                    <img src="./images/flyux/photos_affinity_flyux_process/20200411_160453.jpg" class="img-fluid mx-auto col-lg-4 py-2" alt="">
+                    <img src="./images/flyux/photos_affinity_flyux_process/20200411_162112.jpg" class="img-fluid mx-auto col-lg-4 py-2" alt="">
                 </div>
             </div>
             <div class="container d-flex flex-row justify-content-start align-items-start">
                 <!--TODO onclick open in new window image-->
-                <img src="./images/flyux/flyux_affinity_diagram_1.png" class="img-fluid img-small-item mx-auto shadow" alt="...">
+                <img src="./images/flyux/affinity_diagram.jpg" class="img-fluid mx-auto shadow" alt="">
             </div>
             <div class="container d-flex flex-row justify-content-start align-items-start py-5">
                 <div class="row justify-content-md-center">
@@ -227,15 +222,15 @@
                     </p>
                     <p class="m-0 lh-lg text-start">
                         Objectives :
-                    <br />- Translate research data into a structured document
-                    <br />- Define and examinate the high-level steps in the journey
-                    <br />- Understand the goals of the user, whether there were any pain points, and if there were any behaviours that the website was not facilitating.
+                        <br />- Translate research data into a structured document
+                        <br />- Define and examinate the high-level steps in the journey
+                        <br />- Understand the goals of the user, whether there were any pain points, and if there were any behaviours that the website was not facilitating.
                     </p>
                 </div>
             </div>
             <div class="container d-flex flex-row justify-content-start align-items-start py-5">
                 <!--TODO onclick open in new window image-->
-                <img src="./images/flyux/flyux_customer_journey_map 1.png" class="img-fluid img-small-item mx-auto shadow" alt="...">
+                <img src="./images/flyux/customer_journey_map.jpg" class="img-fluid mx-auto shadow" alt="">
             </div>
             <div class="container d-flex flex-row justify-content-start align-items-start py-5">
                 <h1>Design</h1>
@@ -245,7 +240,7 @@
                     <p class="m-0 mb-3 lh-lg text-start">To <span class="bg-info bg-opacity-50">ﬁx the issues uncovered during research,</span> and highlighted during the analysis a <span class="fw-bold">high-level ﬂow for the mobile app</span> was defined focusing on one ﬂow, that is, one primary use case.</p>
                     <p class="m-0 lh-lg text-start">
                         Objectives :
-                    <br />- Deﬁne the high-level ﬂow for booking ﬂights on the new airline mobile app
+                        <br />- Deﬁne the high-level ﬂow for booking ﬂights on the new airline mobile app
                         <br />- Address all the issues highlighted in the customer journey map
                         <br />- Lay the groundwork on which the designs will be built
                     </p>
@@ -253,30 +248,30 @@
             </div>
             <div class="container d-flex flex-row justify-content-start align-items-start py-5">
                 <!--TODO onclick open in new window image-->
-                <img src="./images/flyux/flyux_userflow_1.png" class="img-fluid img-small-item mx-auto" alt="...">
+                <img src="./images/flyux/user_flow.png" class="img-fluid mx-auto" alt="">
             </div>
             <div class="container d-flex flex-row justify-content-start align-items-start py-5">
                 <div class="row justify-content-md-center">
                     <p class="m-0 lh-lg text-start">Next step - design the <span class="fw-bold">sketches of the screens</span> for the mobile app ﬂight booking process.</p>
                     <p class="m-0 lh-lg text-start">
                         Objectives :
-                    <br />- Design the clear screens and screen states for users ﬂowing through the Fly UX mobile app
+                        <br />- Design the clear screens and screen states for users ﬂowing through the Fly UX mobile app
                         <br />- Address all the issues and user goals identiﬁed in the research and analysis
                     </p>
                 </div>
             </div>
             <div class="container d-flex flex-row justify-content-start align-items-start py-5">
-                <div class="row justify-content-md-center">
-                    <img src="./images/flyux/flyux_sketches_4.png" class="img-fluid mx-auto col-lg-4" alt="...">
-                    <img src="./images/flyux/flyux_sketches_5.png" class="img-fluid mx-auto col-lg-4" alt="...">
-                    <img src="./images/flyux/flyux_sketches_6.png" class="img-fluid mx-auto col-lg-4" alt="...">
+                <div class="row w-100 justify-content-md-center">
+                    <img src="./images/flyux/flyux_sketches_4.png" class="img-fluid mx-auto col-lg-4 py-2" alt="">
+                    <img src="./images/flyux/flyux_sketches_5.png" class="img-fluid mx-auto col-lg-4 py-2" alt="">
+                    <img src="./images/flyux/flyux_sketches_6.png" class="img-fluid mx-auto col-lg-4 py-2" alt="">
                 </div>
             </div>
             <div class="container d-flex flex-row justify-content-start align-items-start py-5">
-                <div class="row justify-content-md-center">
-                    <img src="./images/flyux/flyux_sketches_1.png" class="img-fluid mx-auto col-lg-4" alt="...">
-                    <img src="./images/flyux/flyux_sketches_2.png" class="img-fluid mx-auto col-lg-4" alt="...">
-                    <img src="./images/flyux/flyux_sketches_3.png" class="img-fluid mx-auto col-lg-4" alt="...">
+                <div class="row w-100 justify-content-md-center">
+                    <img src="./images/flyux/flyux_sketches_1.png" class="img-fluid mx-auto col-lg-4 py-2" alt="">
+                    <img src="./images/flyux/flyux_sketches_2.png" class="img-fluid mx-auto col-lg-4 py-2" alt="">
+                    <img src="./images/flyux/flyux_sketches_3.png" class="img-fluid mx-auto col-lg-4 py-2" alt="">
                 </div>
             </div>
             <div class="container d-flex flex-row justify-content-start align-items-start py-5">
@@ -286,20 +281,121 @@
             </div>
             <!--TODO slider-->
             <div class="container d-flex flex-row justify-content-start align-items-start py-5">
-                <div class="row justify-content-md-center">
-                    <img src="./images/flyux/flyux1.png" class="img-fluid mx-auto col-lg-2" alt="...">
-                    <img src="./images/flyux/flyux1.png" class="img-fluid mx-auto col-lg-2" alt="...">
-                    <img src="./images/flyux/flyux1.png" class="img-fluid mx-auto col-lg-2" alt="...">
-                    <img src="./images/flyux/flyux1.png" class="img-fluid mx-auto col-lg-2" alt="...">
-                    <img src="./images/flyux/flyux1.png" class="img-fluid mx-auto col-lg-2" alt="...">
-                    <img src="./images/flyux/flyux1.png" class="img-fluid mx-auto col-lg-2" alt="...">
-                    <img src="./images/flyux/flyux1.png" class="img-fluid mx-auto col-lg-2" alt="...">
-                    <img src="./images/flyux/flyux1.png" class="img-fluid mx-auto col-lg-2" alt="...">
-                    <img src="./images/flyux/flyux1.png" class="img-fluid mx-auto col-lg-2" alt="...">
-                    <img src="./images/flyux/flyux1.png" class="img-fluid mx-auto col-lg-2" alt="...">
-                    <img src="./images/flyux/flyux1.png" class="img-fluid mx-auto col-lg-2" alt="...">
-                    <img src="./images/flyux/flyux1.png" class="img-fluid mx-auto col-lg-2" alt="...">
-                    <img src="./images/flyux/flyux1.png" class="img-fluid mx-auto col-lg-2" alt="...">
+                <div id="splide1" class="splide w-100">
+                    <div class="splide__track">
+                        <ul class="splide__list">
+                            <li class="splide__slide p-5">
+                                <div class="splide__slide__container">
+                                    <img src="./images/frigo/frigo_export_mobile/1.png" />
+                                </div>
+                            </li>
+                            <li class="splide__slide p-5">
+                                <div class="splide__slide__container">
+                                    <img src="./images/frigo/frigo_export_mobile/2.png" />
+                                </div>
+                            </li>
+                            <li class="splide__slide p-5">
+                                <div class="splide__slide__container">
+                                    <img src="./images/frigo/frigo_export_mobile/3.png" />
+                                </div>
+                            </li>
+                            <li class="splide__slide p-5">
+                                <div class="splide__slide__container">
+                                    <img src="./images/frigo/frigo_export_mobile/4.png" />
+                                </div>
+                            </li>
+                            <li class="splide__slide p-5">
+                                <div class="splide__slide__container">
+                                    <img src="./images/frigo/frigo_export_mobile/5.png" />
+                                </div>
+                            </li>
+                            <li class="splide__slide p-5">
+                                <div class="splide__slide__container">
+                                    <img src="./images/frigo/frigo_export_mobile/6.png" />
+                                </div>
+                            </li>
+                            <li class="splide__slide p-5">
+                                <div class="splide__slide__container">
+                                    <img src="./images/frigo/frigo_export_mobile/7.png" />
+                                </div>
+                            </li>
+                            <li class="splide__slide p-5">
+                                <div class="splide__slide__container">
+                                    <img src="./images/frigo/frigo_export_mobile/8.png" />
+                                </div>
+                            </li>
+                            <li class="splide__slide p-5">
+                                <div class="splide__slide__container">
+                                    <img src="./images/frigo/frigo_export_mobile/9.png" />
+                                </div>
+                            </li>
+                            <li class="splide__slide p-5">
+                                <div class="splide__slide__container">
+                                    <img src="./images/frigo/frigo_export_mobile/10.png" />
+                                </div>
+                            </li>
+                            <li class="splide__slide p-5">
+                                <div class="splide__slide__container">
+                                    <img src="./images/frigo/frigo_export_mobile/11.png" />
+                                </div>
+                            </li>
+                            <li class="splide__slide p-5">
+                                <div class="splide__slide__container">
+                                    <img src="./images/frigo/frigo_export_mobile/12.png" />
+                                </div>
+                            </li>
+                            <li class="splide__slide p-5">
+                                <div class="splide__slide__container">
+                                    <img src="./images/frigo/frigo_export_mobile/13.png" />
+                                </div>
+                            </li>
+                            <li class="splide__slide p-5">
+                                <div class="splide__slide__container">
+                                    <img src="./images/frigo/frigo_export_mobile/14.png" />
+                                </div>
+                            </li>
+                            <li class="splide__slide p-5">
+                                <div class="splide__slide__container">
+                                    <img src="./images/frigo/frigo_export_mobile/15.png" />
+                                </div>
+                            </li>
+                            <li class="splide__slide p-5">
+                                <div class="splide__slide__container">
+                                    <img src="./images/frigo/frigo_export_mobile/16.png" />
+                                </div>
+                            </li>
+                            <li class="splide__slide p-5">
+                                <div class="splide__slide__container">
+                                    <img src="./images/frigo/frigo_export_mobile/17.png" />
+                                </div>
+                            </li>
+                            <li class="splide__slide p-5">
+                                <div class="splide__slide__container">
+                                    <img src="./images/frigo/frigo_export_mobile/18.png" />
+                                </div>
+                            </li>
+                            <li class="splide__slide p-5">
+                                <div class="splide__slide__container">
+                                    <img src="./images/frigo/frigo_export_mobile/19.png" />
+                                </div>
+                            </li>
+                            <li class="splide__slide p-5">
+                                <div class="splide__slide__container">
+                                    <img src="./images/frigo/frigo_export_mobile/20.png" />
+                                </div>
+                            </li>
+                            <li class="splide__slide p-5">
+                                <div class="splide__slide__container">
+                                    <img src="./images/frigo/frigo_export_mobile/21.png" />
+                                </div>
+                            </li>
+                            <li class="splide__slide p-5">
+                                <div class="splide__slide__container">
+                                    <img src="./images/frigo/frigo_export_mobile/22.png" />
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
             <div class="container d-flex flex-row justify-content-start align-items-start py-5">
@@ -308,7 +404,7 @@
             <div class="container d-flex flex-row justify-content-start align-items-start">
                 <div class="row justify-content-md-center">
                     <div class="col py-5 video-col">
-                        <img src="./images/flyux/flyux1.png" class="img-fluid img-small-item mx-auto shadow" alt="...">
+                        <img src="./images/flyux/flyux1.png" class="img-fluid mx-auto shadow" alt="...">
                     </div>
                     <div class="col py-5">
                         <p class="m-0 lh-lg text-start">After testing the first iteration <span class="fw-bold">medium ﬁdelity prototype</span> for the Fly UX mobile application was created to <span class="bg-info bg-opacity-50">add more detail in the form of interactivity,</span> containing high-level ﬂow, screen layouts, text, and basic interactions.</p>
@@ -324,17 +420,44 @@
                 </div>
             </div>
             <div class="container d-flex flex-row justify-content-start align-items-start py-5">
-                <!--TODO onclick open in new window image-->
-                <img src="./images/flyux/flyux1.png" class="img-fluid img-small-item mx-auto shadow" alt="...">
+                <div class="row w-100 justify-content-md-center">
+                    <div class="col-lg-3">
+                        <img src="./images/flyux/wireframes/Frame 9.png" class="ms-3 py-2 img-fluid mx-auto" alt="">
+                        <img src="./images/flyux/wireframes/Frame 13.png" class="ms-3 py-2 img-fluid mx-auto" alt="">
+                    </div>
+                    <div class="col-lg-3">
+                        <img src="./images/flyux/wireframes/Frame 10.png" class="ms-3 py-2 img-fluid mx-auto" alt="">
+                        <img src="./images/flyux/wireframes/Frame 14.png" class="ms-3 py-2 img-fluid mx-auto" alt="">
+                    </div>
+                    <div class="col-lg-3">
+                        <img src="./images/flyux/wireframes/Frame 11.png" class="ms-3 py-2 img-fluid mx-auto" alt="">
+                        <img src="./images/flyux/wireframes/Frame 15.png" class="ms-3 py-2 img-fluid mx-auto" alt="">
+                    </div>
+                    <div class="col-lg-3">
+                        <img src="./images/flyux/wireframes/Frame 12.png" class="ms-3 py-2 img-fluid mx-auto" alt="">
+                        <img src="./images/flyux/wireframes/Frame 16.png" class="ms-3 py-2 img-fluid mx-auto" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="container d-flex flex-row justify-content-start align-items-center py-5">
+                <a class="prev proj-nav nav-link d-flex" href="./frigoproj.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="64" width="64" fill="currentColor" class="d-inline-block bi bi-caret-left-fill" viewBox="0 0 16 16">
+                        <path d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z" />
+                    </svg>
+                    <div class="d-inline-block">
+                        Previous project
+                        <h2>HELFER Training app</h2>
+                    </div>
+                </a>
             </div>
         </div>
 
         <div class="vh-20 w-100 d-flex main-container align-items-center justify-content-center flex-wrap flex-column">
             <p class="fs-2 text-center">Do I have your attention?</p>
-            <a class="fs-2 text-center text-reset text-decoration-none btn btn-lg btn-primary" role="button" data-bs-toggle="button" href="mailto:annette.khokhlova@gmail.com?subject=Contact" onclick="openEmail()">Hit me up</a>
+            <a id="hit-me-up-button" class="fs-2 text-center text-reset text-decoration-none btn btn-lg btn-primary" role="button" data-bs-toggle="button" href="mailto:annette.khokhlova@gmail.com?subject=Contact" onclick="openEmail()">Hit me up</a>
         </div>
         <footer class="mt-auto text-white-50 container">
-            <div class="row align-items-start justify-content-center">
+            <div class="row align-items-center justify-content-center">
                 <p class="m-0 fs-3 col text-start"> © Khokhlova Anna 2022 </p>
                 <div id="contacts-container" class="col d-flex justify-content-end align-items-center">
                     <p id="contacts-text">Contact me</p>

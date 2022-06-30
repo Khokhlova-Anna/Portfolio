@@ -36,6 +36,7 @@
     <script src="./Scripts/shared.js"></script>
     <!-- Custom styles and scripts for this template -->
     <script src="./Scripts/helferproj.js"></script>
+    <link href="./Styles/helferproj.css" rel="stylesheet">
 
 </head>
 
@@ -51,7 +52,7 @@
                 </nav>
 
                 <div class="p-1 d-flex flex-row">
-                    <a class="fs-5 px-3 justify-content-center align-items-end text-reset text-decoration-none btn btn-sm btn-primary" role="button" data-bs-toggle="button" href="mailto:annette.khokhlova@gmail.com?subject=Contact" onclick="openEmail()">Contact</a>
+                    <a id="contact-button" class="fs-5 px-3 justify-content-center align-items-end text-reset text-decoration-none btn btn-sm btn-primary" role="button" data-bs-toggle="button" href="mailto:annette.khokhlova@gmail.com?subject=Contact" onclick="openEmail()">Contact</a>
                     <ul class="navbar-nav px-3 justify-content-center">
                         <li class="nav-item dropdown">
                             <a class="dropdown-toggle text-decoration-none fs-5 text-muted" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -116,18 +117,22 @@
                     <p class="m-0 lh-lg text-start">Autumn 2021 - Now</p>
                 </div>
             </div>
-            <div class="container d-flex flex-column justify-content-between align-items-start py-5">
+            <div id="scrollTrainer" class="container d-flex flex-row justify-content-between align-items-start py-5">
                 <h1 class="text-start">Trainer app :</h1>
+                <div class="d-flex flex-row">
+                    <a class="nav-link p-0" href="#scrollTrainee">
+                        <h1 class="text-start">See Trainee app ↓</h1>
+                    </a>
+                </div>
             </div>
-            <div class="container d-flex flex-column justify-content-between align-items-start py-5">
-                <svg class="bd-placeholder-img bd-placeholder-img-lg img-fluid mx-auto" width="1320"
-                     height="660" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 1320x660"
-                     preserveAspectRatio="xMidYMid slice" focusable="false">
-                    <title>Placeholder</title>
-                    <rect width="100%" height="100%" fill="#eee"></rect>
-                    <text x="50%" y="50%" fill="#aaa"
-                          dy=".3em">1320x660</text>
-                </svg>
+            <div id="helfer-preview-container" class="container d-flex flex-row justify-content-center align-items-center py-5">
+                <img id="helfer-trainer-preview-image-1" src="./images/helfer/iphone-trainer/iPhone12_12Pro2.png" class="helfer-preview-image" alt="" />
+                <img id="helfer-trainer-preview-image-2" src="./images/helfer/iphone-trainer/iPhone12_12Pro7.png" class="helfer-preview-image" alt="" />
+                <img id="helfer-trainer-preview-image-3" src="./images/helfer/iphone-trainer/iPhone12_12Pro3.png" class="helfer-preview-image" alt="" />
+                <img id="helfer-trainer-preview-image-4" src="./images/helfer/iphone-trainer/iPhone12_12Pro4.png" class="helfer-preview-image" alt="" />
+                <img id="helfer-trainer-preview-image-5" src="./images/helfer/iphone-trainer/iPhone12_12Pro5.png" class="helfer-preview-image" alt="" />
+                <img id="helfer-trainer-preview-image-6" src="./images/helfer/iphone-trainer/iPhone12_12Pro.png" class="helfer-preview-image" alt="" />
+                <img id="helfer-trainer-preview-image-7" src="./images/helfer/iphone-trainer/iPhone12_12Pro6.png" class="helfer-preview-image" alt="" />
             </div>
             <div class="container d-flex flex-column justify-content-between align-items-start py-5">
                 <h2 class="text-start">Problem :</h2>
@@ -162,27 +167,27 @@
                 </p>
             </div>
             <div class="container d-flex flex-row justify-content-start align-items-start py-5">
-                <h1>Initial application</h1>
+                <h1>Old application</h1>
             </div>
             <div class="container d-flex flex-column justify-content-between align-items-start py-5">
                 <h2 class="text-start">Mobile</h2>
                 <div class="row justify-content-md-center">
                     <div class="col-lg-3 py-5">
-                        <img src="./images/helfer/initial_app_mobile1.png" class="ms-3">
+                        <img src="./images/helfer/screenshots_gelfer_initialapp/mobile/Screenshot-20220123223345.png" class="img-fluid mx-auto" alt="">
                     </div>
                     <div class="col-lg-3 py-5">
-                        <img src="./images/helfer/initial_app_mobile2.png" class="ms-3">
+                        <img src="./images/helfer/screenshots_gelfer_initialapp/mobile/Screenshot-20220123224214.png" class="img-fluid mx-auto" alt="">
                     </div>
                     <div class="col-lg-3 py-5">
-                        <img src="./images/helfer/initial-app-desktop/Screenshot_1.png" class="ms-3">
-                        <img src="./images/helfer/initial-app-desktop/Screenshot_2.png" class="ms-3">
-                        <img src="./images/helfer/initial-app-desktop/Screenshot_3.png" class="ms-3">
-                        <img src="./images/helfer/initial-app-desktop/Screenshot_4.png" class="ms-3">
+                        <img src="./images/helfer/screenshots_gelfer_initialapp/Screenshot_1.png" class="img-fluid mx-auto" alt="">
+                        <img src="./images/helfer/screenshots_gelfer_initialapp/Screenshot_2.png" class="img-fluid mx-auto" alt="">
+                        <img src="./images/helfer/screenshots_gelfer_initialapp/Screenshot_3.png" class="img-fluid mx-auto" alt="">
+                        <img src="./images/helfer/screenshots_gelfer_initialapp/Screenshot_4.png" class="img-fluid mx-auto" alt="">
                     </div>
                     <div class="col-lg-3 py-5">
-                        <img src="./images/helfer/initial-app-desktop/Screenshot_5.png" class="ms-3">
-                        <img src="./images/helfer/initial-app-desktop/Screenshot_6.png" class="ms-3">
-                        <img src="./images/helfer/initial-app-desktop/Screenshot_7.png" class="ms-3">
+                        <img src="./images/helfer/screenshots_gelfer_initialapp/Screenshot_5.png" class="img-fluid mx-auto" alt="">
+                        <img src="./images/helfer/screenshots_gelfer_initialapp/Screenshot_6.png" class="img-fluid mx-auto" alt="">
+                        <img src="./images/helfer/screenshots_gelfer_initialapp/Screenshot_7.png" class="img-fluid mx-auto" alt="">
                     </div>
                 </div>
             </div>
@@ -191,39 +196,39 @@
                 <div id="splide1" class="splide w-100">
                     <div class="splide__track">
                         <ul class="splide__list">
-                            <li class="splide__slide p-4">
+                            <li class="splide__slide p-6">
                                 <div class="splide__slide__container">
-                                    <img src="./images/helfer/initial-app-desktop/Screenshot_1.png" />
+                                    <img src="./images/helfer/screenshots_gelfer_initialapp/Screenshot_1.png" />
                                 </div>
                             </li>
-                            <li class="splide__slide p-4">
+                            <li class="splide__slide p-6">
                                 <div class="splide__slide__container">
-                                    <img src="./images/helfer/initial-app-desktop/Screenshot_2.png" />
+                                    <img src="./images/helfer/screenshots_gelfer_initialapp/Screenshot_2.png" />
                                 </div>
                             </li>
-                            <li class="splide__slide p-4">
+                            <li class="splide__slide p-6">
                                 <div class="splide__slide__container">
-                                    <img src="./images/helfer/initial-app-desktop/Screenshot_3.png" />
+                                    <img src="./images/helfer/screenshots_gelfer_initialapp/Screenshot_3.png" />
                                 </div>
                             </li>
-                            <li class="splide__slide p-4">
+                            <li class="splide__slide p-6">
                                 <div class="splide__slide__container">
-                                    <img src="./images/helfer/initial-app-desktop/Screenshot_4.png" />
+                                    <img src="./images/helfer/screenshots_gelfer_initialapp/Screenshot_4.png" />
                                 </div>
                             </li>
-                            <li class="splide__slide p-4">
+                            <li class="splide__slide p-6">
                                 <div class="splide__slide__container">
-                                    <img src="./images/helfer/initial-app-desktop/Screenshot_5.png" />
+                                    <img src="./images/helfer/screenshots_gelfer_initialapp/Screenshot_5.png" />
                                 </div>
                             </li>
-                            <li class="splide__slide p-4">
+                            <li class="splide__slide p-6">
                                 <div class="splide__slide__container">
-                                    <img src="./images/helfer/initial-app-desktop/Screenshot_6.png" />
+                                    <img src="./images/helfer/screenshots_gelfer_initialapp/Screenshot_6.png" />
                                 </div>
                             </li>
-                            <li class="splide__slide p-4">
+                            <li class="splide__slide p-6">
                                 <div class="splide__slide__container">
-                                    <img src="./images/helfer/initial-app-desktop/Screenshot_7.png" />
+                                    <img src="./images/helfer/screenshots_gelfer_initialapp/Screenshot_7.png" />
                                 </div>
                             </li>
                         </ul>
@@ -233,105 +238,96 @@
             <div class="container d-flex flex-row justify-content-start align-items-start py-5">
                 <h1>Sketches</h1>
             </div>
-            <div class="container d-flex flex-row justify-content-start align-items-start py-5">
-                <div class="row justify-content-md-center">
+            <div class="container d-flex flex-row justify-content-center align-items-center py-5">
+                <div class="row w-100 justify-content-md-center">
                     <div class="col-lg-3 py-5">
-                        <img src="./images/helfer/sketches/1.png" class="ms-3">
+                        <img src="./images/helfer/sketches/1.png">
                     </div>
                     <div class="col-lg-3 py-5">
-                        <img src="./images/helfer/sketches/2.png" class="ms-3">
+                        <img src="./images/helfer/sketches/2.png">
                     </div>
                     <div class="col-lg-3 py-5">
-                        <img src="./images/helfer/sketches/3.png" class="ms-3">
+                        <img src="./images/helfer/sketches/3.png">
                     </div>
                     <div class="col-lg-3 py-5">
-                        <img src="./images/helfer/sketches/4.png" class="ms-3">
+                        <img src="./images/helfer/sketches/4.png">
                     </div>
                 </div>
             </div>
             <div class="container d-flex flex-row justify-content-start align-items-start py-5">
                 <h1>Medium-Fidelity wireframes for registration</h1>
             </div>
-            <div class="container d-flex flex-column justify-content-start align-items-start py-5">
+            <div class="container d-flex flex-column justify-content-center align-items-center py-5">
                 <div class="row w-100 justify-content-md-center">
                     <div class="col-lg-4 py-2">
-                        <img src="./images/helfer/wireframes-registration/Desktop_1.png" class="ms-3">
+                        <img src="./images/helfer/helfer_trainer_wireframe/Desktop - 2.png" class="img-fluid mx-auto helfer-wireframe-image">
                     </div>
                     <div class="col-lg-4 py-2">
-                        <img src="./images/helfer/wireframes-registration/Desktop_2.png" class="ms-3">
+                        <img src="./images/helfer/helfer_trainer_wireframe/Desktop - 3.png" class="img-fluid mx-auto helfer-wireframe-image">
                     </div>
                     <div class="col-lg-4 py-2">
-                        <img src="./images/helfer/wireframes-registration/Desktop_3.png" class="ms-3">
+                        <img src="./images/helfer/helfer_trainer_wireframe/Desktop - 5.png" class="img-fluid mx-auto helfer-wireframe-image">
                     </div>
                 </div>
                 <div class="row w-100 justify-content-md-center">
                     <div class="col-lg-4 py-2">
-                        <img src="./images/helfer/wireframes-registration/Desktop_4.png" class="ms-3">
+                        <img src="./images/helfer/helfer_trainer_wireframe/Desktop - 8.png" class="img-fluid mx-auto helfer-wireframe-image">
                     </div>
                     <div class="col-lg-4 py-2">
-                        <img src="./images/helfer/wireframes-registration/Desktop_5.png" class="ms-3">
+                        <img src="./images/helfer/helfer_trainer_wireframe/Desktop - 7.png" class="img-fluid mx-auto helfer-wireframe-image">
                     </div>
                     <div class="col-lg-4 py-2">
-                        <img src="./images/helfer/wireframes-registration/Desktop_6.png" class="ms-3">
+                        <img src="./images/helfer/helfer_trainer_wireframe/Desktop - 9.png" class="img-fluid mx-auto helfer-wireframe-image">
                     </div>
                 </div>
                 <div class="row w-100 justify-content-md-center">
                     <div class="col-lg-4 py-2">
-                        <img src="./images/helfer/wireframes-registration/Desktop_7.png" class="ms-3">
+                        <img src="./images/helfer/helfer_trainer_wireframe/Desktop - 13.png" class="img-fluid mx-auto helfer-wireframe-image">
                     </div>
                     <div class="col-lg-4 py-2">
-                        <img src="./images/helfer/wireframes-registration/Desktop_8.png" class="ms-3">
+                        <img src="./images/helfer/helfer_trainer_wireframe/Desktop - 14.png" class="img-fluid mx-auto helfer-wireframe-image">
                     </div>
                     <div class="col-lg-4 py-2">
-                        <img src="./images/helfer/wireframes-registration/Desktop_9.png" class="ms-3">
+                        <img src="./images/helfer/helfer_trainer_wireframe/Desktop - 16.png" class="img-fluid mx-auto helfer-wireframe-image">
                     </div>
                 </div>
             </div>
             <div class="container d-flex flex-row justify-content-start align-items-start py-5">
                 <h1>High fidelity app mockup, prototype</h1>
             </div>
-            <div class="container d-flex flex-column justify-content-start align-items-start py-5">
+            <div class="container d-flex flex-column justify-content-center align-items-center py-5">
                 <div class="row w-100 justify-content-md-center">
                     <div class="col-lg-4 py-4">
-                        <h3>Creation of an exercise</h3>
+                        <h3 class="py-4">Creation of an exercise</h3>
                     </div>
                     <div class="col-lg-4 py-4">
-                        <h3>Creation of the training program</h3>
+                        <h3 class="py-4">Creation of the training program</h3>
                     </div>
                     <div class="col-lg-4 py-4">
-                        <h3>Registration, my account</h3>
+                        <h3 class="py-4">Registration, my account</h3>
                     </div>
                 </div>
                 <div class="row w-100 justify-content-md-center">
-                    <div class="col-lg-4 py-4">
-                        <svg class="bd-placeholder-img bd-placeholder-img-lg img-fluid mx-auto" width="494"
-                             height="734" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 494x734"
-                             preserveAspectRatio="xMidYMid slice" focusable="false">
-                            <title>Placeholder</title>
-                            <rect width="100%" height="100%" fill="#eee"></rect>
-                            <text x="50%" y="50%" fill="#aaa"
-                                  dy=".3em">494x734</text>
-                        </svg>
+                    <div class="col-lg-4 py-4 helfer-screen-player-container">
+                        <video id="helfer-video-1" width="385" height="245" autoplay muted loop>
+                            <source src="./images/helfer/Videos-Trainer/1-Desktop-Wireframes_-_Gelfer_-_Figma_2022-04-17_01-45-06_AdobeCreativeCloudExpress.mp4" type="video/mp4">
+                        </video>
+                        <img id="helfer-screen-1" src="./images/helfer/Videos-Trainer/EMPTY-iPhone 12 Pro Max.png" alt="" />
+                        <img id="helfer-statusbar-1" src="./images/helfer/Videos-Trainer/status bar.png" alt="" />
                     </div>
-                    <div class="col-lg-4 py-4">
-                        <svg class="bd-placeholder-img bd-placeholder-img-lg img-fluid mx-auto" width="494"
-                             height="734" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 494x734"
-                             preserveAspectRatio="xMidYMid slice" focusable="false">
-                            <title>Placeholder</title>
-                            <rect width="100%" height="100%" fill="#eee"></rect>
-                            <text x="50%" y="50%" fill="#aaa"
-                                  dy=".3em">494x734</text>
-                        </svg>
+                    <div class="col-lg-4 py-4 helfer-screen-player-container">
+                        <video id="helfer-video-2" width="385" height="245" autoplay muted loop>
+                            <source src="./images/helfer/Videos-Trainer/2-Desktop-Wireframes_-_Gelfer_-_Figma_2022-05-01_20-44-04_AdobeCreativeCloudExpress.mp4" type="video/mp4">
+                        </video>
+                        <img id="helfer-screen-2" src="./images/helfer/Videos-Trainer/EMPTY-iPhone 12 Pro Max.png" alt="" />
+                        <img id="helfer-statusbar-2" src="./images/helfer/Videos-Trainer/status bar.png" alt="" />
                     </div>
-                    <div class="col-lg-4 py-4">
-                        <svg class="bd-placeholder-img bd-placeholder-img-lg img-fluid mx-auto" width="494"
-                             height="734" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 494x734"
-                             preserveAspectRatio="xMidYMid slice" focusable="false">
-                            <title>Placeholder</title>
-                            <rect width="100%" height="100%" fill="#eee"></rect>
-                            <text x="50%" y="50%" fill="#aaa"
-                                  dy=".3em">494x734</text>
-                        </svg>
+                    <div class="col-lg-4 py-4 helfer-screen-player-container">
+                        <video id="helfer-video-3" width="385" height="245" autoplay muted loop>
+                            <source src="./images/helfer/Videos-Trainer/3-Desktop-Wireframes_-_Gelfer_-_Figma_2022-05-01_21-18-38_AdobeCreativeCloudExpress.mp4" type="video/mp4">
+                        </video>
+                        <img id="helfer-screen-3" src="./images/helfer/Videos-Trainer/EMPTY-iPhone 12 Pro Max.png" alt="" />
+                        <img id="helfer-statusbar-3" src="./images/helfer/Videos-Trainer/status bar.png" alt="" />
                     </div>
                 </div>
             </div>
@@ -345,18 +341,22 @@
                     <br />3. Being both simple and convenient, the use of the product, in turn, also led to an improvement in the quality of the workouts compiled and reduced the workload of the trainer.
                 </p>
             </div>
-            <div class="container d-flex flex-column justify-content-between align-items-start py-5">
+            <div id="scrollTrainee" class="container d-flex flex-row justify-content-between align-items-start py-5">
                 <h1 class="text-start">Trainee app :</h1>
+                <div class="d-flex flex-row">
+                    <a class="nav-link p-0" href="#scrollTrainer">
+                        <h1 class="text-start">See Trainer app ↑</h1>
+                    </a>
+                </div>
             </div>
-            <div class="container d-flex flex-column justify-content-between align-items-start py-5">
-                <svg class="bd-placeholder-img bd-placeholder-img-lg img-fluid mx-auto" width="1320"
-                     height="660" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 1320x660"
-                     preserveAspectRatio="xMidYMid slice" focusable="false">
-                    <title>Placeholder</title>
-                    <rect width="100%" height="100%" fill="#eee"></rect>
-                    <text x="50%" y="50%" fill="#aaa"
-                          dy=".3em">1320x660</text>
-                </svg>
+            <div id="helfer-preview-container" class="container d-flex flex-row justify-content-center align-items-center py-5">
+                <img id="helfer-trainee-preview-image-1" src="./images/helfer/iphone-trainee/iPhone12_12Pro6.png" class="helfer-preview-image" alt="" />
+                <img id="helfer-trainee-preview-image-2" src="./images/helfer/iphone-trainee/iPhone12_12Pro7.png" class="helfer-preview-image" alt="" />
+                <img id="helfer-trainee-preview-image-3" src="./images/helfer/iphone-trainee/iPhone12_12Pro3.png" class="helfer-preview-image" alt="" />
+                <img id="helfer-trainee-preview-image-4" src="./images/helfer/iphone-trainee/iPhone12_12Pro4.png" class="helfer-preview-image" alt="" />
+                <img id="helfer-trainee-preview-image-5" src="./images/helfer/iphone-trainee/iPhone12_12Pro5.png" class="helfer-preview-image" alt="" />
+                <img id="helfer-trainee-preview-image-6" src="./images/helfer/iphone-trainee/iPhone12_12Pro.png" class="helfer-preview-image" alt="" />
+                <img id="helfer-trainee-preview-image-7" src="./images/helfer/iphone-trainee/iPhone12_12Pro2.png" class="helfer-preview-image" alt="" />
             </div>
             <div class="container d-flex flex-column justify-content-between align-items-start py-5">
                 <h2 class="text-start">Problem :</h2>
@@ -394,40 +394,40 @@
                     A general problem of the initial designs was the lack of design consistency, they were incomplete and did not reflect all the needed HMI interactions. My solution was to unify the entire interface and think through and provide every screen state throughout the user flow.
                 </p>
             </div>
-            <div class="container d-flex flex-row justify-content-start align-items-start py-5">
+            <div class="container d-flex flex-row justify-content-center align-items-center py-5">
                 <div class="row w-100 justify-content-md-center">
                     <div class="col-lg-3">
-                        <img src="./images/helfer/first-designs/Login.png" class="ms-3 py-2">
-                        <img src="./images/helfer/first-designs/Search (results).png" class="ms-3 py-2">
-                        <img src="./images/helfer/first-designs/Schedule (empty).png" class="ms-3 py-2">
+                        <img src="./images/helfer/trainee_initial_designs/Login.png" class="py-2 img-fluid mx-auto">
+                        <img src="./images/helfer/trainee_initial_designs/Search (results).png" class="py-2 img-fluid mx-auto">
+                        <img src="./images/helfer/trainee_initial_designs/Schedule (empty).png" class="py-2 img-fluid mx-auto">
                     </div>
                     <div class="col-lg-3">
-                        <img src="./images/helfer/first-designs/Sign up.png" class="ms-3 py-2">
-                        <img src="./images/helfer/first-designs/Trainer profile.png" class="ms-3 py-2">
-                        <img src="./images/helfer/first-designs/Schedule list.png" class="ms-3 py-2">
+                        <img src="./images/helfer/trainee_initial_designs/Sign up.png" class="py-2 img-fluid mx-aut">
+                        <img src="./images/helfer/trainee_initial_designs/Trainer profile.png" class="py-2 img-fluid mx-aut">
+                        <img src="./images/helfer/trainee_initial_designs/Schedule list.png" class="py-2 img-fluid mx-aut">
                     </div>
                     <div class="col-lg-3">
-                        <img src="./images/helfer/first-designs/Email login.png" class="ms-3 py-2">
-                        <img src="./images/helfer/first-designs/Search (empty).png" class="ms-3 py-2">
-                        <img src="./images/helfer/first-designs/Chat.png" class="ms-3 py-2">
-                        <img src="./images/helfer/first-designs/Messages list.png" class="ms-3 py-2">
+                        <img src="./images/helfer/trainee_initial_designs/Email login.png" class="py-2 img-fluid mx-aut">
+                        <img src="./images/helfer/trainee_initial_designs/Search (empty).png" class="py-2 img-fluid mx-aut">
+                        <img src="./images/helfer/trainee_initial_designs/Chat.png" class="py-2 img-fluid mx-aut">
+                        <img src="./images/helfer/trainee_initial_designs/Messages list.png" class="py-2 img-fluid mx-aut">
                     </div>
                     <div class="col-lg-3">
-                        <img src="./images/helfer/first-designs/Email register.png" class="ms-3 py-2">
-                        <img src="./images/helfer/first-designs/Training.png" class="ms-3 py-2">
+                        <img src="./images/helfer/trainee_initial_designs/Email register.png" class="py-2 img-fluid mx-aut">
+                        <img src="./images/helfer/trainee_initial_designs/Training.png" class="py-2 img-fluid mx-aut">
                     </div>
                 </div>
             </div>
             <div class="container d-flex flex-column justify-content-between align-items-start py-5">
                 <h1 class="text-start">High fidelity app mockup, prototype</h1>
             </div>
-            <div class="container d-flex flex-column justify-content-start align-items-start py-5">
+            <div class="container d-flex flex-column justify-content-center align-items-center py-5">
                 <div class="row w-100 justify-content-md-center">
                     <div class="col-lg-4 py-4">
-                        <h3>Creation of an exercise</h3>
+                        <h3>Finding trainer</h3>
                     </div>
                     <div class="col-lg-4 py-4">
-                        <h3>Creation of the training program</h3>
+                        <h3>Buying training program</h3>
                     </div>
                     <div class="col-lg-4 py-4">
                         <h3>Registration, my account</h3>
@@ -471,19 +471,30 @@
             </div>
             <div class="container d-flex flex-column justify-content-between align-items-start py-5">
                 <p class="m-0 mb-3 lh-lg text-start">
-                    1. Product is usable and helps to find a coach with ease. The search is categorised and has a clear useful filter that can be used to narrow the results.
+                    1. Product is usable and helps to find a coach with ease. The search is categorized and has a clear useful filter that can be used to narrow the results.
                     <br />2. The whole process is well thought-through :  screens and screen states cover all the possible scenarios and user flows.
                     <br />3. User is provided with feedback from the trainer and an organized personalized training plan that is easy to follow with the app, as well as set and reach sports objectives.
-                    <br />4. The ordering of the programm and payment is secured and transparent.
+                    <br />4. The ordering of the program and payment is secured and transparent.
                 </p>
+            </div>
+            <div class="container d-flex flex-row justify-content-end align-items-center py-5">
+                <a class="next proj-nav nav-link d-flex" href="./frigoproj.html">
+                    <div class="d-inline-block">
+                        Next project
+                        <h2>Frigo app</h2>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="64" width="64" fill="currentColor" class="d-inline-block bi bi-caret-right-fill" viewBox="0 0 16 16">
+                        <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
+                    </svg>
+                </a>
             </div>
         </div>
         <div class="vh-20 w-100 d-flex main-container align-items-center justify-content-center flex-wrap flex-column">
             <p class="fs-2 text-center">Do I have your attention?</p>
-            <a class="fs-2 text-center text-reset text-decoration-none btn btn-lg btn-primary" role="button" data-bs-toggle="button" href="mailto:annette.khokhlova@gmail.com?subject=Contact" onclick="openEmail()">Hit me up</a>
+            <a id="hit-me-up-button" class="fs-2 text-center text-reset text-decoration-none btn btn-lg btn-primary" role="button" data-bs-toggle="button" href="mailto:annette.khokhlova@gmail.com?subject=Contact" onclick="openEmail()">Hit me up</a>
         </div>
         <footer class="mt-auto text-white-50 container">
-            <div class="row align-items-start justify-content-center">
+            <div class="row align-items-center justify-content-center">
                 <p class="m-0 fs-3 col text-start"> © Khokhlova Anna 2022 </p>
                 <div id="contacts-container" class="col d-flex justify-content-end align-items-center">
                     <p id="contacts-text">Contact me</p>

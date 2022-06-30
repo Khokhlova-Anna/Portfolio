@@ -49,7 +49,7 @@
                 </nav>
 
                 <div class="p-1 d-flex flex-row">
-                    <a class="fs-5 px-3 justify-content-center align-items-end text-reset text-decoration-none btn btn-sm btn-primary" role="button" data-bs-toggle="button" href="mailto:annette.khokhlova@gmail.com?subject=Contact" onclick="openEmail()">Contact</a>
+                    <a id="contact-button" class="fs-5 px-3 justify-content-center align-items-end text-reset text-decoration-none btn btn-sm btn-primary" role="button" data-bs-toggle="button" href="mailto:annette.khokhlova@gmail.com?subject=Contact" onclick="openEmail()">Contact</a>
                     <ul class="navbar-nav px-3 justify-content-center">
                         <li class="nav-item dropdown">
                             <a class="dropdown-toggle text-decoration-none fs-5 text-muted" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -85,7 +85,7 @@
             </div>
         </header>
 
-        <div class="main-container d-flex w-75 vh-50 p-3 mx-auto flex-row justify-content-center align-items-center">
+        <div class="main-container d-flex vh-50 p-3 mx-auto flex-row justify-content-center align-items-center">
             <main class="px-3">
                 <h1 class="text-start">Hello !</h1>
                 <p class="lead text-start">
@@ -107,7 +107,7 @@
                 <hr class="featurette-divider">
 
                 <div class="row featurette py-5" onclick="navigate('./helferproj.html')"> 
-                    <div class="col-md-7 order-md-2 d-flex justify-content-center align-items-start flex-column">
+                    <div class="col-md-5 order-md-2 d-flex justify-content-center align-items-start flex-column">
                         <h2 class="featurette-heading">
                             2 in 1 : HELFER Training app
                         </h2>
@@ -115,23 +115,23 @@
                             Two linked ergonomic applications.                              First is made to optimize, organize and simplify the everyday work of the trainer.                             Second facilitates the sarch and selection of the ideal coach and ease following the training programs by trainees.
                         </p>
                     </div>
-                    <div class="col-md-5 order-md-1">
-                        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto shadow" width="300"
-                             height="300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 300x300"
-                             preserveAspectRatio="xMidYMid slice" focusable="false">
-                            <title>Placeholder</title>
-                            <rect width="100%" height="100%" fill="#eee"></rect>
-                            <text x="50%" y="50%" fill="#aaa"
-                                  dy=".3em">300x300</text>
-                        </svg>
-
+                    <div id="helfer-preview-column"  class="col-md-7 order-md-1">
+                        <div class="helfer-preview-container">
+                            <img id="helfer-preview-image-1" src="./images/helfer/iphone-trainer/iPhone12_12Pro2.png" class="helfer-preview-image helfer-trainer-group" alt="" />
+                            <img id="helfer-preview-image-2" src="./images/helfer/iphone-trainer/iPhone12_12Pro7.png" class="helfer-preview-image helfer-trainer-group" alt="" />
+                            <img id="helfer-preview-image-3" src="./images/helfer/iphone-trainer/iPhone12_12Pro5.png" class="helfer-preview-image helfer-trainer-group" alt="" />
+                            <img id="helfer-preview-image-4" src="./images/helfer/iphone-trainer/iPhone12_12Pro.png" class="helfer-preview-image" alt="" />
+                            <img id="helfer-preview-image-5" src="./images/helfer/iphone-trainee/iPhone12_12Pro7.png" class="helfer-preview-image helfer-trainee-group" alt="" />
+                            <img id="helfer-preview-image-6" src="./images/helfer/iphone-trainee/iPhone12_12Pro.png" class="helfer-preview-image helfer-trainee-group" alt="" />
+                            <img id="helfer-preview-image-7" src="./images/helfer/iphone-trainee/iPhone12_12Pro6.png" class="helfer-preview-image helfer-trainee-group" alt="" />
+                        </div>
                     </div>
                 </div>
 
                 <hr class="featurette-divider">
 
                 <div class="row featurette py-5" onclick="navigate('./frigoproj.html')"> 
-                    <div class="col-md-7 d-flex justify-content-center align-items-start flex-column">
+                    <div class="col-md-5 d-flex justify-content-center align-items-start flex-column">
                         <h2 class="featurette-heading">
                             Frigo app
                         </h2>
@@ -139,22 +139,21 @@
                             Personal project based on a everyday problem I was facing. Application is aimed to organise and simplify shopping process and more.
                         </p>
                     </div>
-                    <div class="col-md-5">
-                        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto shadow" width="300"
-                             height="300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 300x300"
-                             preserveAspectRatio="xMidYMid slice" focusable="false">
-                            <title>Placeholder</title>
-                            <rect width="100%" height="100%" fill="#eee"></rect>
-                            <text x="50%" y="50%" fill="#aaa"
-                                  dy=".3em">300x300</text>
-                        </svg>
+                    <div id="frigo-preview-column" class="col-md-7">
+                        <div class="frigo-preview-container">
+                            <img id="frigo-preview-image-1" src="./images/frigo/laptop-Frigo-empty.png" class="frigo-preview-image" alt="" />
+                            <img id="frigo-preview-image-2" src="./images/frigo/Frigo-mobile-separate.png" class="frigo-preview-image" alt="" />
+                            <video id="frigo-preview-video-3" width="385" height="245" autoplay muted>
+                                <source src="./images/frigo/1.Trimmed-Project-Frigo-AdobeCreativeCloudExpress.mp4" type="video/mp4">
+                            </video>
+                        </div>
                     </div>
                 </div>
 
                 <hr class="featurette-divider">
 
-                <div class="row featurette py-5" onclick="navigate('./flyuxproj.html')">
-                    <div class="col-md-7 order-md-2 d-flex justify-content-center align-items-start flex-column">
+                <div id="flyux-preview-featurette" class="row featurette py-5" onclick="navigate('./flyuxproj.html')">
+                    <div class="col-md-5 order-md-2 d-flex justify-content-center align-items-start flex-column">
                         <h2 class="featurette-heading">
                             FlyUx
                         </h2>
@@ -162,16 +161,14 @@
                             Design of a usable fight booking process for a new mobile app for FlyUX.
                         </p>
                     </div>
-                    <div class="col-md-5 order-md-1">
-                        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto shadow" width="300"
-                             height="300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 300x300"
-                             preserveAspectRatio="xMidYMid slice" focusable="false">
-                            <title>Placeholder</title>
-                            <rect width="100%" height="100%" fill="#eee"></rect>
-                            <text x="50%" y="50%" fill="#aaa"
-                                  dy=".3em">300x300</text>
-                        </svg>
-
+                    <div id="flyux-preview-column" class="col-md-7 order-md-1">
+                        <div class="flyux-preview-container">
+                            <img id="flyux-preview-image-1" src="./images/flyux/FlyuxOnMobile/Mobile1.png" class="flyux-preview-image" alt="" />
+                            <img id="flyux-preview-image-2" src="./images/flyux/FlyuxOnMobile/Mobile2.png" class="flyux-preview-image" alt="" />
+                            <img id="flyux-preview-image-3" src="./images/flyux/FlyuxOnMobile/Mobile3.png" class="flyux-preview-image" alt="" />
+                            <img id="flyux-preview-image-4" src="./images/flyux/FlyuxOnMobile/Mobile4.png" class="flyux-preview-image" alt="" />
+                            <img id="flyux-preview-image-5" src="./images/flyux/FlyuxOnMobile/Mobile5.png" class="flyux-preview-image" alt="" />
+                        </div>
                     </div>
                 </div>
 
@@ -184,10 +181,10 @@
 
         <div class="vh-20 w-100 d-flex main-container align-items-center justify-content-center flex-wrap flex-column">
             <p class="fs-2 text-center">Do I have your attention?</p>
-            <a class="fs-2 text-center text-reset text-decoration-none btn btn-lg btn-primary" role="button" data-bs-toggle="button" href="mailto:annette.khokhlova@gmail.com?subject=Contact" onclick="openEmail()">Hit me up</a>
+            <a id="hit-me-up-button" class="fs-2 text-center text-reset text-decoration-none btn btn-lg btn-primary" role="button" data-bs-toggle="button" href="mailto:annette.khokhlova@gmail.com?subject=Contact" onclick="openEmail()">Hit me up</a>
         </div>
         <footer class="mt-auto text-white-50 container">
-            <div class="row align-items-start justify-content-center">
+            <div class="row align-items-center justify-content-center">
                 <p class="m-0 fs-3 col text-start"> © Khokhlova Anna 2022 </p>
                 <div id="contacts-container" class="col d-flex justify-content-end align-items-center">
                     <p id="contacts-text">Contact me</p>

@@ -2,21 +2,7 @@
     width:5rem;
     height:5rem;
 }
-/*
-.reveal {
-    position: relative;
-    transform: scale(0.5);
-    opacity: 0;
-    transition: 1s all ease;
-}
-
-    .reveal.active {
-        transform: translateY(0);
-        opacity: 1;
-        transition: 1s all ease;
-    }
-*/
 
 .steper-content-item {
-    padding: 3rem !important;
+    padding: 3rem 0 3rem 3rem !important;
 }
