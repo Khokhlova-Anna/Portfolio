@@ -2,11 +2,11 @@
     cursor: pointer;
 }
 
- .featurette:hover .featurette-image {
-    transform: scale(1.1);
-    opacity: 1;
-    transition: 1s all ease;
-}
+    .featurette:hover .featurette-image {
+        transform: scale(1.1);
+        opacity: 1;
+        transition: 1s all ease;
+    }
 
 .featurette .featurette-image {
     -webkit-transition: all .2s ease;
@@ -14,4 +14,129 @@
     -ms-transition: all .2s ease;
     -o-transition: all .2s ease;
     transition: all .2s ease;
+}
+
+.flyux-preview-container {
+    width: 100px;
+    overflow: hidden;
+}
+
+.flyux-preview-image {
+    position: relative;
+    height: auto;
+    transform: rotateY(0deg) rotate(-45deg) translateY(0);
+}
+
+.frigo-preview-container {
+    width: 100px;
+    overflow: hidden;
+}
+
+.frigo-preview-image {
+    position: relative;
+    height: auto;
+}
+
+#frigo-preview-image-1 {
+    z-index: 1;
+}
+
+#frigo-preview-image-2 {
+    top: -330px;
+    left: 400px;
+    z-index: 3;
+}
+
+#frigo-preview-video-3 {
+    position: relative;
+    z-index: 2;
+    top: -278px;
+    left: -48px;
+    object-fit: cover;
+}
+
+.helfer-preview-container {
+    width: 100px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.helfer-preview-image {
+    display: inline-block;
+    position: relative;
+    height: auto;
+    width: 100px;
+}
+
+#helfer-preview-column {
+    overflow: hidden;
+}
+
+.helfer-trainer-group {
+    z-index: 1;
+}
+
+.helfer-trainee-group {
+    z-index: 1;
+}
+
+#helfer-preview-image-1 {
+    z-index: 1;
+}
+#helfer-preview-image-2 {
+    z-index: 2;
+}
+#helfer-preview-image-3 {
+    z-index: 3;
+}
+
+#helfer-preview-image-4 {
+    z-index: 4;
+}
+
+#helfer-preview-image-5 {
+    z-index: 3;
+}
+#helfer-preview-image-6 {
+    z-index: 2;
+}
+#helfer-preview-image-7 {
+    z-index: 1;
+}
+
+.featurette:hover #helfer-preview-image-1 {
+    transform: translate(-90%) scale(0.8) rotateY(45deg);
+    transition: 1s all ease;
+}
+
+.featurette:hover #helfer-preview-image-2 {
+    transform: translate(-75%) scale(0.8) rotateY(45deg);
+    transition: 1s all ease;
+}
+
+.featurette:hover #helfer-preview-image-3 {
+    transform: translate(-60%) scale(0.8) rotateY(45deg);
+    transition: 1s all ease;
+}
+
+.featurette:hover #helfer-preview-image-5 {
+    transform: translate(60%) scale(0.8) rotateY(-45deg);
+    transition: 1s all ease;
+}
+
+.featurette:hover #helfer-preview-image-6 {
+    transform: translate(75%) scale(0.8) rotateY(-45deg);
+    transition: 1s all ease;
+}
+
+.featurette:hover #helfer-preview-image-7 {
+    transform: translate(90%) scale(0.8) rotateY(-45deg);
+    transition: 1s all ease;
+}
+
+.featurette:hover #helfer-preview-image-4 {
+    transform: scale(0.8);
+    transition: 1s all ease;
 }

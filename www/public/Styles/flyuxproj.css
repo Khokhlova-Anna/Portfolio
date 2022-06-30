@@ -1,8 +1,4 @@
 @media screen and (max-width: 576px) {
-    .image-stack {
-        display: none;
-    }
-
     .image-col {
         min-width: 80vw;
         display: block;
@@ -10,23 +6,6 @@
 
     .video-col {
         min-width: 80vw;
-    }
-}
-
-@media screen and (min-width: 577px) {
-    .image-stack {
-        display: grid;
-        grid-template: 1fr / 1fr;
-        place-items: center;
-    }
-
-        .image-stack > * {
-            grid-column: 1 / 1;
-            grid-row: 1 / 1;
-        }
-
-    .image-col {
-        display: none;
     }
 }
 
@@ -41,29 +20,97 @@
 .image-stack:hover .image-item-1 {
     transform: translate(100%, 200%);
     opacity: 1;
-    transition: 1s all ease;
+    transition: 500ms all ease;
 }
 
 .image-stack:hover .image-item-2 {
     transform: translate(80%, 160%);
     opacity: 1;
-    transition: 1s all ease;
+    transition: 500ms all ease;
 }
 
 .image-stack:hover .image-item-3 {
     transform: translate(60%, 120%);
     opacity: 1;
-    transition: 1s all ease;
+    transition: 500ms all ease;
 }
 
 .image-stack:hover .image-item-4 {
     transform: translate(40%, 80%);
     opacity: 1;
-    transition: 1s all ease;
+    transition: 500ms all ease;
 }
 
 .image-stack:hover .image-item-5 {
     transform: translate(20%, 40%);
     opacity: 1;
-    transition: 1s all ease;
+    transition: 500ms all ease;
+}
+
+.flyux-preview-image {
+    position: relative;
+    width: 260px;
+    height: auto;
+    filter: drop-shadow(0px 10px 10px rgba(69, 101, 128, 0.4));
+}
+
+#flyux-preview-container:hover #flyux-preview-image-1 {
+    transform: rotateY(0deg) rotate(-15deg) translateX(-50px);
+    transition: 500ms all ease;
+}
+
+#flyux-preview-container:hover #flyux-preview-image-2 {
+    transform: rotateY(0deg) rotate(-10deg) translateX(-25px) ;
+    transition: 500ms all ease;
+}
+
+#flyux-preview-container:hover #flyux-preview-image-5 {
+    transform: rotateY(0deg) rotate(15deg) translateX(50px) ;
+    transition: 500ms all ease;
+}
+
+#flyux-preview-container:hover #flyux-preview-image-4 {
+    transform: rotateY(0deg) rotate(10deg) translateX(25px);
+    transition: 500ms all ease;
+}
+
+#flyux-preview-image-1 {
+    top: -40px;
+    left: 170px;
+    transform: rotateY(0deg) rotate(-10deg);
+    transition: 500ms all ease;
+    z-index: 1;
+}
+
+#flyux-preview-image-2 {
+    top: -20px;
+    left: 80px;
+    transform: rotateY(0deg) rotate(-5deg);
+    transition: 500ms all ease;
+    z-index: 2;
+}
+
+#flyux-preview-image-3 {
+    z-index: 3;
+    transition: 500ms all ease;
+}
+
+#flyux-preview-image-4 {
+    top: -20px;
+    left: -80px;
+    transform: rotateY(0deg) rotate(5deg);
+    transition: 500ms all ease;
+    z-index: 2;
+}
+
+#flyux-preview-image-5 {
+    top: -40px;
+    left: -170px;
+    transform: rotateY(0deg) rotate(10deg);
+    transition: 500ms all ease;
+    z-index: 1;
+}
+
+.flyux-preview-image {
+    width: 200px;
 }
