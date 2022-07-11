@@ -70,14 +70,24 @@ function resizeHelferScreenVideos() {
     var $helferScreen3 = $("#helfer-screen-3");
     var $helferStatusbar3 = $("#helfer-statusbar-3");
     var $helferVideo3 = $("#helfer-video-3");
+    var $helferScreen4 = $("#helfer-screen-4");
+    var $helferStatusbar4 = $("#helfer-statusbar-4");
+    var $helferVideo4 = $("#helfer-video-4");
+    var $helferScreen5 = $("#helfer-screen-5");
+    var $helferStatusbar5 = $("#helfer-statusbar-5");
+    var $helferVideo5 = $("#helfer-video-5");
+    var $helferScreen6 = $("#helfer-screen-6");
+    var $helferStatusbar6 = $("#helfer-statusbar-6");
+    var $helferVideo6 = $("#helfer-video-6");
 
     var baseColumnWidth = 432;
     var baseScreenWidth = 368;
     var baseStatusbarTop = -1658;
     var baseStatusbar2Top = -1656;
+    var baseStatusbar3Top = -1657;
     var basePhoneTop = -847;
     var basePhoneWidth = 408;
-    var baseVideoLeft = -1;
+    var baseVideoLeft = -1.5;
     var baseVideoHeight = 827.56;
 
     var $helferScrenColumn = $(".helfer-screen-player-container");
@@ -98,17 +108,44 @@ function resizeHelferScreenVideos() {
     $helferVideo3.width(baseScreenWidth * coef);
     $helferVideo3.height(baseVideoHeight * coef);
 
+    $helferScreen4.width(basePhoneWidth * coef);
+    $helferStatusbar4.width(baseScreenWidth * coef);
+    $helferVideo4.width(baseScreenWidth * coef);
+    $helferVideo4.height(baseVideoHeight * coef);
+
+    $helferScreen5.width(basePhoneWidth * coef);
+    $helferStatusbar5.width(baseScreenWidth * coef);
+    $helferVideo5.width(baseScreenWidth * coef);
+    $helferVideo5.height(baseVideoHeight * coef);
+
+    $helferScreen6.width(basePhoneWidth * coef);
+    $helferStatusbar6.width(baseScreenWidth * coef);
+    $helferVideo6.width(baseScreenWidth * coef);
+    $helferVideo6.height(baseVideoHeight * coef);
+
     $helferStatusbar1.css("top", baseStatusbarTop * coef + "px");
     $helferScreen1.css("top", basePhoneTop * coef + "px");
-    $helferVideo1.css("left", baseVideoLeft * coef + "px");
+    $helferVideo1.css("left", -baseVideoLeft * coef + "px");
 
     $helferStatusbar2.css("top", baseStatusbar2Top * coef + "px");
     $helferScreen2.css("top", basePhoneTop * coef + "px");
-    $helferVideo2.css("left", baseVideoLeft * coef + "px");
+    $helferVideo2.css("left", -baseVideoLeft * coef + "px");
 
     $helferStatusbar3.css("top", baseStatusbarTop * coef + "px");
     $helferScreen3.css("top", basePhoneTop * coef + "px");
-    $helferVideo3.css("left", baseVideoLeft * coef + "px");
+    $helferVideo3.css("left", -baseVideoLeft * coef + "px");
+
+    $helferStatusbar4.css("top", baseStatusbarTop * coef + "px");
+    $helferScreen4.css("top", basePhoneTop * coef + "px");
+    $helferVideo4.css("left", -baseVideoLeft * coef + "px");
+
+    $helferStatusbar5.css("top", baseStatusbar2Top * coef + "px");
+    $helferScreen5.css("top", basePhoneTop * coef + "px");
+    $helferVideo5.css("left", -baseVideoLeft * coef + "px");
+
+    $helferStatusbar6.css("top", baseStatusbar3Top * coef + "px");
+    $helferScreen6.css("top", basePhoneTop * coef + "px");
+    $helferVideo6.css("left", -baseVideoLeft * coef + "px");
 }
 
 $(window).resize(function () {
