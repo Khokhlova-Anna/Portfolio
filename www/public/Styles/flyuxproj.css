@@ -114,3 +114,30 @@
 .flyux-preview-image {
     width: 200px;
 }
+
+.flyux-screen-player-container {
+    height: 828px;
+}
+
+#flyux-screen-1 {
+    width: 408px;
+    height: auto;
+    z-index: 3;
+    top: -847px;
+    position: relative;
+}
+
+#flyux-statusbar-1 {
+    top: -1658px;
+    z-index: 2;
+    position: relative;
+    width: 367px;
+}
+
+#flyux-video-1 {
+    width: 368px;
+    height: 827px;
+    z-index: 1;
+    position: relative;
+    left: -1px;
+}
