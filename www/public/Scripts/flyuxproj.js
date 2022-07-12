@@ -101,3 +101,32 @@ $(document).ready(() => {
     resizeFlyUxPreview();
     resizeUsabilityTestPlayer();
 });
+
+function resizeHelferScreenVideos() {
+    var $flyuxScreen1 = $("#flyux-screen-1");
+    var $flyuxStatusbar1 = $("#flyux-statusbar-1");
+    var $flyuxVideo1 = $("#flyux-video-1");
+
+
+    var baseColumnWidth = 584;
+    var baseScreenWidth = 368;
+    var baseStatusbarTop = -1658;
+    var basePhoneTop = -799;
+    var basePhoneWidth = 401;
+    var baseStatusLeft = -3;
+    var baseVideoHeight = 827.56;
+
+    var $flyuxScrenColumn = $(".flyux-screen-player-container");
+    var coef = $flyuxScrenColumn.outerWidth() / baseColumnWidth;
+
+    $flyuxScreen1.width(basePhoneWidth * coef);
+    $flyuxStatusbar1.width(baseScreenWidth * coef);
+    $helferVideo1.width(baseScreenWidth * coef);
+    $flyuxVideo1.height(baseVideoHeight * coef);
+
+
+    $flyuxStatusbar1.css("top", baseStatusbarTop * coef + "px");
+    $flyuxStatusbar1.css("left", baseStatusLeft * coef + "px");
+    $flyuxScreen1.css("top", basePhoneTop * coef + "px");
+    $flyuxVideo1.css("left", baseVideoLeft * coef + "px");
+}
