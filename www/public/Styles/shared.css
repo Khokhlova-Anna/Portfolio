@@ -126,7 +126,7 @@ body {
 
     #btn-back-to-top {
         position: fixed;
-        bottom: 7.5rem;
+        bottom: 13.4rem;
         left: 1rem;
         display: none;
         z-index: 10;
@@ -228,4 +228,18 @@ footer p {
 
 footer {
     padding: 6.25rem 0 2rem 0 !important;
+}
+
+.project-description-container {
+    background: #3f4a7b;
+    padding: 1.5rem 0 1.5rem 0;
+}
+
+.limit-text-width {
+    max-width: 36rem;
+    width: 100%;
+}
+
+.text-highlighted {
+    color: #6C63FF !important;
 }

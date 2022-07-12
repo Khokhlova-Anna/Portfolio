@@ -194,6 +194,10 @@
     gap: 5rem;
 }
 
+#visit-card h2 {
+    line-height: 2rem;
+}
+
 #scrollWork {
     padding-top: 5rem !important;
     padding-bottom: 6.25rem !important;

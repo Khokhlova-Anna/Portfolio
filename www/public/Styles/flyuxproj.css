@@ -120,18 +120,19 @@
 }
 
 #flyux-screen-1 {
-    width: 408px;
+    width: 401px;
     height: auto;
     z-index: 3;
-    top: -847px;
+    top: -799px;
     position: relative;
 }
 
 #flyux-statusbar-1 {
-    top: -1658px;
+    top: -1512px;
     z-index: 2;
     position: relative;
-    width: 367px;
+    width: 375px;
+    left: -3px;
 }
 
 #flyux-video-1 {
@@ -140,4 +141,9 @@
     z-index: 1;
     position: relative;
     left: -1px;
+}
+
+
+.main-container {
+    max-width: 72.5rem !important;
 }
