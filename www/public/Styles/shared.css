@@ -91,6 +91,7 @@ body {
     overflow-y: overlay;
     font-family: 'Aileron';
     font-weight: 400;
+    letter-spacing: 0.03em;
 }
 
 @media screen and (max-width: 960px) {
