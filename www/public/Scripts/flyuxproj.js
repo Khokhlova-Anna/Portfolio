@@ -109,7 +109,7 @@ function resizeHelferScreenVideos() {
 
 
     var baseColumnWidth = 584;
-    var baseScreenWidth = 368;
+    var baseScreenWidth = 370;
     var baseStatusbarTop = -1658;
     var basePhoneTop = -799;
     var basePhoneWidth = 401;

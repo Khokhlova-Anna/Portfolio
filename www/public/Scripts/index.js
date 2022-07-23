@@ -205,10 +205,45 @@ function resizeHelferPreview() {
     $helferImage7.css("left", -baseImageWidth * coef * 2.5 + "px");
 }
 
+function resizeCanvas() {
+    clearInterval(interval);
+    var $mainBackgroundContainer = $("#main-background-container");
+    var $canvas = $("#visit-card-canvas");
+    $canvas.width($mainBackgroundContainer.width());
+    $canvas.height($mainBackgroundContainer.height());
+    
+    var canvas = document.getElementById("visit-card-canvas");
+        var ctx = canvas.getContext("2d");
+        var img = new Image();
+
+        var ang = 0; //angle
+        var fps = 1000 / 144; //number of frames per sec
+        img.onload = function () { //on image load do the following stuff
+            canvas.width = $mainBackgroundContainer.width(); //double the canvas width
+            canvas.height = $mainBackgroundContainer.height(); //double the canvas height
+            var cache = this; //cache the local copy of image element for future reference
+            interval = setInterval(function () {
+                ctx.save(); //saves the state of canvas
+                ctx.clearRect(0, 0, canvas.width, canvas.height); //clear the canvas
+                ctx.fillStyle = "rgba(34, 51, 95, 0.5)";
+                ctx.filter = "blur(160px)";
+                ctx.fillRect(0, 0, canvas.width, canvas.height);
+                ctx.translate(cache.width, cache.height /2); //let's translate
+                ctx.rotate(Math.PI / 180 * (ang += 0.1)); //increment the angle and rotate the image 
+                ctx.drawImage(img, -cache.width, -cache.height , cache.width * 2, cache.height * 2); //draw the image ;)
+                ctx.restore(); //restore the state of canvas
+            }, fps);
+        };
+
+    img.src = "./images/Shapes.svg"; //img
+}
+
+var interval = undefined;
 $(window).resize(function () {
     resizeFlyUxPreview();
     resizeFrigoPreview();
     resizeHelferPreview();
+    resizeCanvas();
 });
 
 $(document).ready(() => {
@@ -216,5 +251,6 @@ $(document).ready(() => {
         resizeFlyUxPreview();
         resizeFrigoPreview();
         resizeHelferPreview();
+        resizeCanvas();
     },10);
 });
