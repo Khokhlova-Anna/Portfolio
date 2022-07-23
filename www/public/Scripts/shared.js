@@ -39,6 +39,7 @@ function bounceButtons() {
 }
 
 function doBounce(element, times, distance, speed) {
+    element.stop();
     for (var i = 0; i < times; i++) {
         element.animate({ marginLeft: "-=" + distance }, speed, "linear")
             .animate({ marginLeft: "+=" + distance }, speed, "linear");
