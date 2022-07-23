@@ -136,13 +136,12 @@
 }
 
 #flyux-video-1 {
-    width: 368px;
+    width: 370px;
     height: 827px;
     z-index: 1;
     position: relative;
     left: -1px;
 }
-
 
 .main-container {
     max-width: 72.5rem !important;

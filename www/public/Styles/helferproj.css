@@ -80,7 +80,7 @@
 }
 
 .helfer-screen-player-container {
-    height: 828px;
+    height: 770px;
 }
 
 #helfer-screen-1 {
@@ -226,4 +226,8 @@
 .helfer-wireframe-image {
     border: 2px solid rgba(41, 88, 229, 0.25);
     border-radius: 15px;
+}
+
+.main-container {
+    max-width: 72.5rem !important;
 }

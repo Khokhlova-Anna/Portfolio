@@ -1,11 +1,11 @@
 $(document).ready(() => {
-    var splide1 = new Splide('#splide1',
-        { cover: true,
-            heightRatio: 0.476439791,
-            type: 'loop',
-            snap: true,
-        });
-    splide1.mount();
+    //var splide1 = new Splide('#splide1',
+    //    { cover: true,
+    //        heightRatio: 0.476439791,
+    //        type: 'loop',
+    //        snap: true,
+    //    });
+    //splide1.mount();
 
     document.getElementById("helfer-video-1").playbackRate  = 2.0;
 
