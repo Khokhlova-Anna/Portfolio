@@ -127,7 +127,7 @@ body {
     #btn-back-to-top {
         position: fixed;
         bottom: 13.4rem;
-        left: 1rem;
+        right: 2rem;
         display: none;
         z-index: 10;
     }
@@ -242,5 +242,17 @@ footer {
 }
 
 .text-highlighted {
-    color: #6C63FF !important;
+    background: #3F4A7B !important;
+}
+
+.dropdown-menu {
+    min-width: 5rem;
+}
+
+.splide__pagination__page.is-active {
+    background: #f1d00b;
+}
+
+.splide__track {
+    padding-bottom: 3rem;
 }

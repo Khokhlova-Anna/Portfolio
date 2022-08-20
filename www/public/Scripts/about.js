@@ -56,7 +56,7 @@ function resizeCanvas() {
         }, fps);
     };
 
-    img.src = "./images/Shapes.svg"; //img
+    img.src = "../images/Shapes.svg"; //img
 }
 
 $(window).resize(function () {

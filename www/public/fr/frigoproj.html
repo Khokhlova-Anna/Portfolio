@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Anna Khokhlova">
+    <title>Anna Khokhlova Portfolio</title>
+
+    <!-- <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/cover/"> -->
+    <!-- Bootstrap core CSS -->
+    <link href="../Styles/bootstrap.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+            crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/css/splide.min.css" rel="stylesheet" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/js/splide.min.js"></script>
+
+    <!-- Favicons -->
+    <link rel="icon" href="../images/Favicon.svg" sizes="any" type="image/svg+xml">
+
+    <!-- Shared styles and scripts for this template -->
+    <link href="../Styles/shared.css" rel="stylesheet">
+    <script src="../Scripts/shared.js"></script>
+    <!-- Custom styles and scripts for this template -->
+    <script src="../Scripts/frigoproj.js"></script>
+    <link href="../Styles/frigoproj.css" rel="stylesheet">
+
+</head>
+
+<body class="d-flex flex-column h-auto text-center text-white bg-dark justify-content-start align-items-center">
+    <div class="main-container d-flex w-100 h-auto mx-auto flex-column justify-content-center align-items-start" style="gap: 6.25rem;">
+        <div class="main-container d-flex w-100 h-auto flex-column">
+            <header class="mb-auto container p-0">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="menu-block d-flex justify-content-center align-items-center">
+                        <!--<a class="nav-link-home active p-0" aria-current="page" href="./index.html">
+                        <h1 class="float-md-start mb-0">AKh</h1>
+                    </a>-->
+                        <a class="menu-item text-reset text-decoration-none" href="../fr/index.html#scrollWork">Projets</a>
+                        <a class="menu-item text-reset text-decoration-none" href="../fr/about.html">À propos</a>
+                        <a class="menu-item text-reset text-decoration-none" href="#">CV</a>
+                    </div>
+
+                    <div class="menu-block d-flex justify-content-center align-items-center">
+                        <a id="contact-button" class="menu-item text-reset text-decoration-none" role="button" data-bs-toggle="button" href="mailto:annette.khokhlova@gmail.com?subject=Contact" onclick="openEmail()">Contact</a>
+                        <ul class="menu-item justify-content-center text-reset text-decoration-none">
+                            <li class="menu-item dropdown">
+                                <a class="menu-item text-decoration-none text-reset" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    FR
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                                    <li>
+                                        <a class="dropdown-item" href="../en/frigoproj.html">
+                                            <svg xmlns="http://www.w3.org/2000/svg" id="flag-icons-gb" width="16" heigh="16" viewBox="0 0 640 480">
+                                                <path fill="#012169" d="M0 0h640v480H0z" />
+                                                <path fill="#FFF" d="m75 0 244 181L562 0h78v62L400 241l240 178v61h-80L320 301 81 480H0v-60l239-178L0 64V0h75z" />
+                                                <path fill="#C8102E" d="m424 281 216 159v40L369 281h55zm-184 20 6 35L54 480H0l240-179zM640 0v3L391 191l2-44L590 0h50zM0 0l239 176h-60L0 42V0z" />
+                                                <path fill="#FFF" d="M241 0v480h160V0H241zM0 160v160h640V160H0z" />
+                                                <path fill="#C8102E" d="M0 193v96h640v-96H0zM273 0v480h96V0h-96z" />
+                                            </svg> EN
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="../fr/frigoproj.html">
+                                            <svg xmlns="http://www.w3.org/2000/svg" id="flag-icons-fr" width="16" heigh="16" viewBox="0 0 640 480">
+                                                <g fill-rule="evenodd" stroke-width="1pt">
+                                                    <path fill="#fff" d="M0 0h640v480H0z" />
+                                                    <path fill="#002654" d="M0 0h213.3v480H0z" />
+                                                    <path fill="#ce1126" d="M426.7 0H640v480H426.7z" />
+                                                </g>
+                                            </svg> FR
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </header>
+        </div>
+
+        <div class="main-container d-flex w-100 h-auto mx-auto flex-column justify-content-between">
+            <div class="container d-flex flex-row justify-content-between align-items-start">
+                <h1 class="">Frigo App</h1>
+                <p class="text-start lh-lg">L'objectif de ce projet était de créer une application intuitive facile à utiliser qui remplit un but principal : simplifier et organiser les achats.</p>
+            </div>
+        </div>
+
+        <div class="project-description-container main-container d-flex w-100 h-auto mx-auto flex-column">
+            <div class="container d-flex flex-row justify-content-between align-items-start">
+                <div class="d-flex flex-column justify-content-start align-items-start">
+                    <p class="m-0 pb-3 text-start">RÔLE</p>
+                    <p class="m-0 text-start">Recherche UX</p>
+                    <p class="m-0 text-start">Design</p>
+                    <p class="m-0 text-start">Prototypage</p>
+                    <p class="m-0 text-start">Création de wireframes</p>
+                </div>
+                <div class="d-flex flex-column justify-content-start align-items-start">
+                    <p class="m-0 pb-3 text-start">ÉQUIPE</p>
+                    <p class="m-0 text-start">Autogérée</p>
+                </div>
+                <div class="d-flex flex-column justify-content-start align-items-start">
+                    <p class="m-0 pb-3 text-start">CLIENTS</p>
+                    <p class="m-0 text-start">Projet personel</p>
+                </div>
+                <div class="d-flex flex-column justify-content-start align-items-start">
+                    <p class="m-0 pb-3 text-start">ANNÉE</p>
+                    <p class="m-0 text-start">Printemps 2021</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-container d-flex w-100 h-auto mx-auto flex-column justify-content-center align-items-start" style="gap: 3.75rem;">
+            <div class="container d-flex flex-column justify-content-between align-items-start">
+                <img src="../images/frigo/frigo_preview.png" class="img-fluid mx-auto" alt="">
+            </div>
+            <div class="container d-flex flex-column justify-content-between align-items-center" style="gap: 1.5rem;">
+                <h2 class="text-start limit-text-width">Idée (Inspiration) :</h2>
+                <p class="text-start">
+                    Une inspiration pour l'idée d'application est basée sur un problème que je rencontre personnellement.
+                    <br />Après avoir mené <span class="fw-bold">une enquête auprès de plusieurs de mes amis</span>, il s'est avéré qu'ils rencontraient un problème similaire. Bien qu'il existe de nombreuses <span class="text-highlighted">applications similaires</span> sur le marché, elles <span class="text-highlighted">ne pouvaient toujours pas répondre au besoin à 100%</span>, c'est pourquoi <span class="text-highlighted">j'ai décidé de créer ma propre application</span>.
+                </p>
+            </div>
+            <div class="container d-flex flex-column justify-content-between align-items-center" style="gap: 1.5rem;">
+                <h2 class="text-start limit-text-width">Problème :</h2>
+                <p class="text-start">
+                    Planifier des achats dans une famille peut être assez difficile. Étant occupés à travailler toute la journée, nous avons <span class="text-highlighted">utilisé des messageries pour créer une liste de courses à distance</span> avec mon partenaire, où :
+                    <br />- les messages avec liste étaient mélangés à d'autres messages et étaient <span class="text-highlighted">difficiles à trouver</span> au moment des achats,
+                    <br />- était <span class="text-highlighted">impossible d'éditer</span> les messages les uns des autres et
+                    <br />- lors des achats <span class="text-highlighted">inconfortables pour souligner</span> les articles achetés.
+                </p>
+            </div>
+        </div>
+
+        <div class="main-container d-flex w-100 h-auto mx-auto flex-column justify-content-center align-items-start" style="gap: 3.75rem;">
+            <div class="main-container d-flex w-100 mx-auto flex-column justify-content-start align-items-center" style="gap: 1.5rem;">
+                <div class="container d-flex flex-row justify-content-center align-items-center">
+                    <h2 class="text-start limit-text-width">Étape 1 : Concept</h2>
+                </div>
+
+                <div class="main-container d-flex w-100 mx-auto flex-row justify-content-start align-items-center" style="gap: 2.5rem;">
+                    <div class="col image-col">
+                        <svg class="bd-placeholder-img bd-placeholder-img-lg img-fluid mx-auto" width="720"
+                             height="480" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 720x480"
+                             preserveAspectRatio="xMidYMid slice" focusable="false">
+                            <title>Placeholder</title>
+                            <rect width="100%" height="100%" fill="#eee"></rect>
+                            <text x="50%" y="50%" fill="#aaa"
+                                  dy=".3em">720x480</text>
+                        </svg>
+                    </div>
+                    <div class="col limit-text-width">
+                        <p class="m-0 mb-4 text-start">
+                            Dans un premier temps, j'ai <span class="text-highlighted">identifié la liste des principales caractéristiques</span> et fonctionnalités à concevoir.
+                            <br />J'ai passé du temps à <span class="text-highlighted">explorer des applications</span>, des pages marketing et des pages de destination <span class="text-highlighted">similaires à mon projet</span> (telles que les applications de planification, les applications de prise de notes, les messagers, les tableaux distants).
+                        </p>
+                        <p class="m-0 mb-4 text-start">
+                            En utilisant la technique de "conception du début", j'ai conçu une version approximative de la page de destination de mon application. Je voulais structurer quelques informations générales sur l'application et mettre en évidence les principales fonctionnalités que j'aimerais avoir en fonction des problèmes existants.
+                        </p>
+                        <p class="m-0 text-start">
+                            Cela m'a aidé à décider <span class="text-highlighted">où concentrer mon attention en tant que designer</span>.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-container d-flex w-100 h-auto mx-auto flex-column justify-content-center align-items-start" style="gap: 3.75rem;">
+            <div class="main-container d-flex w-100 mx-auto flex-column justify-content-start align-items-center" style="gap: 1.5rem;">
+                <div class="container d-flex flex-row justify-content-center align-items-center">
+                    <h2 class="text-start limit-text-width">Étape 1.1 : Logo</h2>
+                </div>
+                <div class="container d-flex flex-row justify-content-center align-items-center">
+                    <p class="m-0 text-start"><span class="text-highlighted">Un logo</span> responsive basé sur le concept de l'application a été <span class="text-highlighted">esquissé et numérisé</span>.</p>
+                </div>
+            </div>
+            <div class="main-container d-flex w-100 mx-auto flex-column justify-content-start align-items-center" style="gap: 1.5rem;">
+                <div class="container d-flex flex-row justify-content-center align-items-center">
+                    <h2 class="text-start limit-text-width">Itérations :</h2>
+                </div>
+                <div class="main-container d-flex w-100 mx-auto flex-row justify-content-start align-items-start" style="gap: 2.5rem;">
+                    <div class="col-lg-6 image-col">
+                        <img src="../images/frigo/20220820_155628.jpg" class="img-fluid mx-auto" alt="" style="max-width: 55%;">
+                    </div>
+                    <div class="col-lg-3">
+                        <img src="../images/frigo/Frame3.png" class="frigo-icon img-fluid mx-auto" alt="">
+                        <img src="../images/frigo/Frame6.png" class="frigo-icon img-fluid mx-auto" alt="">
+                    </div>
+                    <div class="col-lg-3">
+                        <img src="../images/frigo/Frame4.png" class="frigo-icon img-fluid mx-auto" alt="">
+                        <img src="../images/frigo/Frame5.png" class="frigo-icon img-fluid mx-auto" alt="">
+
+                    </div>
+                </div>
+            </div>
+            <div class="main-container d-flex w-100 mx-auto flex-column justify-content-start align-items-center" style="gap: 1.5rem;">
+                <div class="container d-flex flex-row justify-content-center align-items-center">
+                    <h2 class="text-start limit-text-width">Version finale :</h2>
+                </div>
+                <div class="container limit-text-width d-flex flex-row justify-content-start align-items-start">
+                    <img src="../images/frigo/Logo.png" class="me-3" alt="">
+                    <img src="../images/frigo/Logo1.png" class="ms-3" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="main-container d-flex w-100 h-auto mx-auto flex-column justify-content-center align-items-start" style="gap: 3.75rem;">
+            <div class="main-container d-flex w-100 mx-auto flex-column justify-content-start align-items-center" style="gap: 1.5rem;">
+                <div class="container d-flex flex-row justify-content-center align-items-center">
+                    <h2 class="text-start limit-text-width">Étape 2 : Wireflow (Mise en page + Diagramme de flux)</h2>
+                </div>
+                <div class="container d-flex flex-row justify-content-center align-items-center">
+                    <p class="m-0 text-start">Le parcours utilisateur de la fonctionnalité principale devait être conçu pour garantir le suivi des écrans et des vues individuels et de la manière dont ils fonctionnent ensemble.</p>
+                </div>
+                <div class="container d-flex flex-row justify-content-center align-items-center">
+                    <p class="m-0 text-start">Comme une structure globale de l'application n'est pas complexe, au lieu d'utiliser un <span class="text-highlighted">diagramme de flux</span>, j'ai commencé à penser directement à la <span class="text-highlighted">mise en page</span> et je l'ai incorporée en créant un <span class="fw-bold">wireflow</span>.</p>
+                </div>
+            </div>
+            <div class="main-container d-flex w-100 mx-auto flex-column justify-content-start align-items-center" style="gap: 1.5rem;">
+                <img src="../images/frigo/frigo_flow/User Flow mobile-goodcolor.jpg" class="img-fluid mx-auto" alt="">
+                <h2 class="m-0 text-center">MOBILE</h2>
+            </div>
+            <div class="main-container d-flex w-100 mx-auto flex-column justify-content-start align-items-center" style="gap: 1.5rem;">
+                <img src="../images/frigo/frigo_flow/User Flow desktop-goodcolor-goodplacement.jpg" class="img-fluid mx-auto" alt="">
+                <h2 class="m-0 text-center">DESKTOP</h2>
+            </div>
+        </div>
+
+        <div class="main-container d-flex w-100 mx-auto flex-column justify-content-start align-items-center" style="gap: 1.5rem;">
+            <div class="container d-flex flex-row justify-content-center align-items-center">
+                <h2 class="text-start limit-text-width">Étape 3 : Guide de style</h2>
+            </div>
+            <div class="main-container d-flex w-100 mx-auto flex-row justify-content-start align-items-start" style="gap: 2.5rem;">
+                <div class="col image-col">
+                    <img src="../images/frigo/style_guide_colors.png" class="img-fluid mx-auto" alt="">
+                </div>
+                <div class="col">
+                    <div class="container limit-text-width d-flex flex-column justify-content-center align-items-center" style="gap: 2.5rem;">
+                        <p class="m-0 text-start">Sur cette étape, j'ai commencé à <span class="text-highlighted">adapter la théorie des couleurs</span> pour les interfaces.</p>
+                        <p class="m-0 text-start">Après avoir analysé la concurrence indirecte et considéré <span class="text-highlighted">les sentiments que je voulais invoquer</span>, j'ai commencé à construire une palette : les couleurs dont j'avais besoin en fonction des fonctionnalités de mon application.</p>
+                        <p class="m-0 text-start">En conséquence, j'ai créé un <span class="fw-bold">guide de style</span> qui montre les couleurs et les polices de caractères que mon application utilisera, ainsi que la façon de les appliquer. Ce guide a créé un ensemble de <span class="text-highlighted">règles à suivre lors de la conception de l'application</span>.</p>
+                        <img src="../images/frigo/style_guide_icons.png" class="img-fluid mx-auto" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="main-container d-flex w-100 h-auto mx-auto flex-column justify-content-center align-items-start" style="gap: 3.75rem;">
+            <div class="main-container d-flex w-100 mx-auto flex-column justify-content-start align-items-center" style="gap: 1.5rem;">
+                <div class="container d-flex flex-row justify-content-center align-items-center">
+                    <h2 class="text-start limit-text-width">Étape 4 : Maquette d'application haute fidélité</h2>
+                </div>
+                <div class="container d-flex flex-row justify-content-center align-items-center">
+                    <p class="m-0 text-start">
+                        Dès que les wireframes et le guide de style ont été terminés, revus et affinés, j'ai commencé à assembler les <span class="fw-bold">maquettes haute fidélité</span> pour mes écrans d'application.
+                        <br />Ces maquettes sont des représentations statiques de l'application finale qui intègrent tous les choix de couleur, de type et d'esthétique.
+                    </p>
+                </div>
+            </div>
+            <div class="main-container d-flex w-100 mx-auto flex-column justify-content-start align-items-center" style="gap: 1.5rem;">
+                <div class="container d-flex flex-row justify-content-center align-items-center">
+                    <h2 class="text-start limit-text-width">Desktop</h2>
+                </div>
+                <div class="main-container d-flex flex-row justify-content-center align-items-center">
+                    <div id="splide1" class="splide w-100">
+                        <div class="splide__track">
+                            <ul class="splide__list">
+                                <li class="splide__slide">
+                                    <div class="splide__slide__container">
+                                        <img src="../images/frigo/frigo_export_desktop/Log-In.png" alt="" />
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div class="splide__slide__container">
+                                        <img src="../images/frigo/frigo_export_desktop/Log-In-WrongPass.png" alt="" />
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div class="splide__slide__container">
+                                        <img src="../images/frigo/frigo_export_desktop/Sign-Up-Pass-Rules.png" alt="" />
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div class="splide__slide__container">
+                                        <img src="../images/frigo/frigo_export_desktop/CreateFrigo.png" alt="" />
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div class="splide__slide__container">
+                                        <img src="../images/frigo/frigo_export_desktop/CreateFrigoDetails.png" alt="" />
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div class="splide__slide__container">
+                                        <img src="../images/frigo/frigo_export_desktop/AddMember.png" alt="" />
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div class="splide__slide__container">
+                                        <img src="../images/frigo/frigo_export_desktop/SearchResults.png" alt="" />
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div class="splide__slide__container">
+                                        <img src="../images/frigo/frigo_export_desktop/AddNewList.png" alt="" />
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div class="splide__slide__container">
+                                        <img src="../images/frigo/frigo_export_desktop/AddShoppingList.png" alt="" />
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div class="splide__slide__container">
+                                        <img src="../images/frigo/frigo_export_desktop/ShoppingListCreated.png" alt="" />
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div class="splide__slide__container">
+                                        <img src="../images/frigo/frigo_export_desktop/ShopList1Item.png" alt="" />
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div class="splide__slide__container">
+                                        <img src="../images/frigo/frigo_export_desktop/ShoppListReady.png" alt="" />
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div class="splide__slide__container">
+                                        <img src="../images/frigo/frigo_export_desktop/MyAccount.png" alt="" />
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div class="splide__slide__container">
+                                        <img src="../images/frigo/frigo_export_desktop/MyFrigos.png" alt="" />
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-container d-flex w-100 mx-auto flex-column justify-content-start align-items-center" style="gap: 1.5rem;">
+                <div class="container d-flex flex-row justify-content-center align-items-center">
+                    <h2 class="text-start limit-text-width">Mobile</h2>
+                </div>
+                <div class="container d-flex flex-row justify-content-center align-items-center">
+                    <p class="m-0 text-start">
+                        La version mobile de l'application sera probablement plus utilisée, car non seulement l'assemblage de la liste de courses peut se produire (les répondants ont souvent rappelé et ajouté des articles à la liste "on the move"), mais aussi pendant le processus d'achat dans un magasin ou un supermarché, où l'utilisation de la version de bureau n'est pas possible.
+                        <br />Compte tenu de cela, il était important de s'assurer de ne pas limiter un utilisateur dans la fonctionnalité et de fournir une excellente expérience utilisateur.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-container d-flex w-100 mx-auto flex-column justify-content-start align-items-center" style="gap: 1.5rem;">
+            <div class="container d-flex flex-row justify-content-center align-items-center">
+                <h2 class="text-start limit-text-width">Étape 5 : Prototypage</h2>
+            </div>
+            <div class="main-container d-flex w-100 mx-auto flex-row justify-content-start align-items-center" style="gap: 2.5rem;">
+                <div class="col image-col">
+                    <svg class="bd-placeholder-img bd-placeholder-img-lg img-fluid mx-auto" width="720"
+                         height="480" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 720x480"
+                         preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <title>Placeholder</title>
+                        <rect width="100%" height="100%" fill="#eee"></rect>
+                        <text x="50%" y="50%" fill="#aaa"
+                              dy=".3em">720x480</text>
+                    </svg>
+                </div>
+                <div class="col">
+                    <div class="container limit-text-width d-flex flex-column justify-content-center align-items-center" style="gap: 2.5rem;">
+                        <p class="m-0 text-start">Afin de pouvoir tester mon application auprès des utilisateurs réels, un <span class="fw-bold">prototype interactif à partir d'écrans hi-fi</span> a été créé à l'aide de l'outil <span class="text-highlighted">Marvel</span>.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-container d-flex w-100 mx-auto flex-column justify-content-start align-items-center" style="gap: 3.75rem;">
+            <div class="main-container d-flex w-100 mx-auto flex-column justify-content-start align-items-center" style="gap: 1.5rem;">
+                <div class="container d-flex flex-row justify-content-center align-items-center">
+                    <h2 class="text-start limit-text-width">Étape 6 : Test d'utilisation</h2>
+                </div>
+                <div class="main-container d-flex w-100 mx-auto flex-row justify-content-start align-items-center" style="gap: 2.5rem;">
+                    <div class="col usability-test-player-column">
+                        <iframe id="usability-test-player" src="https://drive.google.com/file/d/1ZxtvqsuMIjEIJV89fqt2iJGEv4phf4yi/preview" width="300" height="200" allow="autoplay"></iframe>
+                    </div>
+                    <div class="col">
+                        <div class="container limit-text-width d-flex flex-column justify-content-center align-items-center" style="gap: 1.5rem;">
+                            <p class="m-0 text-start">
+                                Dès que le prototype a été assemblé, des <span class="fw-bold">sessions d'utilisabilité</span> ont été programmées afin de recueillir des commentaires et d'identifier comment la conception actuelle peut être améliorée.
+                            </p>
+                            <p class="m-0 text-start">
+                                <span class="text-highlighted">Les informations recueillies</span> auprès des utilisateurs ont ensuite été analysées, structurées et <span class="text-highlighted">utilisées pour l'itération de la conception</span>.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-container d-flex w-100 mx-auto flex-column justify-content-start align-items-center">
+                <img src="../images/frigo/usability_test_ notetaking.png" class="img-fluid mx-auto" alt="">
+            </div>
+        </div>
+
+        <div class="main-container d-flex w-100 mx-auto flex-column justify-content-start align-items-center" style="gap: 3.75rem;">
+            <div class="main-container d-flex w-100 mx-auto flex-column justify-content-start align-items-center" style="gap: 1.5rem;">
+                <div class="container d-flex flex-row justify-content-center align-items-center">
+                    <h2 class="text-start limit-text-width">Étape 7 : Maquette d'application hi-fi Mobile - Itération</h2>
+                </div>
+                <div class="container d-flex w-100 mx-auto flex-row justify-content-center align-items-start">
+                    <p class="m-0 text-start">
+                        En utilisant les commentaires que j'ai reçus et les informations que j'ai glanées sur mon prototype, j'ai mis à jour mes maquettes haute fidélité, poli les bords rugueux et affiné les zones qui n'ont pas reçu suffisamment d'attention.
+                    </p>
+                </div>
+            </div>
+            <div class="main-container d-flex w-100 mx-auto flex-column justify-content-start align-items-center">
+                <div id="splide2" class="splide w-100">
+                    <div class="splide__track">
+                        <ul class="splide__list">
+                            <li class="splide__slide">
+                                <div class="splide__slide__container">
+                                    <img src="../images/frigo/frigo_export_mobile/1.png" />
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="splide__slide__container">
+                                    <img src="../images/frigo/frigo_export_mobile/2.png" />
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="splide__slide__container">
+                                    <img src="../images/frigo/frigo_export_mobile/3.png" />
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="splide__slide__container">
+                                    <img src="../images/frigo/frigo_export_mobile/4.png" />
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="splide__slide__container">
+                                    <img src="../images/frigo/frigo_export_mobile/5.png" />
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="splide__slide__container">
+                                    <img src="../images/frigo/frigo_export_mobile/6.png" />
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="splide__slide__container">
+                                    <img src="../images/frigo/frigo_export_mobile/7.png" />
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="splide__slide__container">
+                                    <img src="../images/frigo/frigo_export_mobile/8.png" />
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="splide__slide__container">
+                                    <img src="../images/frigo/frigo_export_mobile/9.png" />
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="splide__slide__container">
+                                    <img src="../images/frigo/frigo_export_mobile/10.png" />
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="splide__slide__container">
+                                    <img src="../images/frigo/frigo_export_mobile/11.png" />
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="splide__slide__container">
+                                    <img src="../images/frigo/frigo_export_mobile/12.png" />
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="splide__slide__container">
+                                    <img src="../images/frigo/frigo_export_mobile/13.png" />
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="splide__slide__container">
+                                    <img src="../images/frigo/frigo_export_mobile/14.png" />
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="splide__slide__container">
+                                    <img src="../images/frigo/frigo_export_mobile/15.png" />
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="splide__slide__container">
+                                    <img src="../images/frigo/frigo_export_mobile/16.png" />
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="splide__slide__container">
+                                    <img src="../images/frigo/frigo_export_mobile/17.png" />
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="splide__slide__container">
+                                    <img src="../images/frigo/frigo_export_mobile/18.png" />
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="splide__slide__container">
+                                    <img src="../images/frigo/frigo_export_mobile/19.png" />
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="splide__slide__container">
+                                    <img src="../images/frigo/frigo_export_mobile/20.png" />
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="splide__slide__container">
+                                    <img src="../images/frigo/frigo_export_mobile/21.png" />
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="splide__slide__container">
+                                    <img src="../images/frigo/frigo_export_mobile/22.png" />
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="main-container d-flex w-100 mx-auto flex-row justify-content-between align-items-center">
+            <a class="prev proj-nav nav-link d-flex" href="../fr/helferproj.html">
+                <svg xmlns="http://www.w3.org/2000/svg" height="64" width="64" fill="currentColor" class="d-inline-block bi bi-caret-left-fill" viewBox="0 0 16 16">
+                    <path d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z" />
+                </svg>
+                <div class="d-inline-block">
+                    Projet précédent
+                    <h2>HELFER Training app</h2>
+                </div>
+            </a>
+            <a class="next proj-nav nav-link d-flex" href="../fr/flyuxproj.html">
+                <div class="d-inline-block">
+                    Projet suivant
+                    <h2>FlyUx</h2>
+                </div>
+                <svg xmlns="http://www.w3.org/2000/svg" height="64" width="64" fill="currentColor" class="d-inline-block bi bi-caret-right-fill" viewBox="0 0 16 16">
+                    <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
+                </svg>
+            </a>
+
+        </div>
+        <div id="attention-container" class="main-container d-flex w-100 h-auto mx-auto flex-column">
+            <div class="w-100 d-flex container align-items-center justify-content-center flex-wrap flex-column">
+                <h1 class="fs-2 text-center">Ai-je capté votre attention ?</h1>
+                <a id="hit-me-up-button" class="fs-2 text-center text-reset text-decoration-none btn btn-lg btn-primary" role="button" data-bs-toggle="button" href="mailto:annette.khokhlova@gmail.com?subject=Contact" onclick="openEmail()">Contactez-moi</a>
+            </div>
+        </div>
+    </div>
+    <div class="main-container d-flex w-100 h-auto mx-auto flex-column">
+        <footer class="mt-auto container">
+            <div class="row align-items-center justify-content-center">
+                <p class="m-0 col text-start"> © Anna Khokhlova 2022 </p>
+                <div id="contacts-container" class="col d-flex justify-content-end align-items-center">
+                    <a class="" href="mailto:annette.khokhlova@gmail.com?subject=Contact">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                            <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z" />
+                        </svg>
+                    </a>
+                    <a class="" href="https://www.linkedin.com/in/anna-khokhlova/">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                            <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+                        </svg>
+                    </a>
+                    <a class="" href="https://www.behance.net/anna-khokhlova">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-behance" viewBox="0 0 16 16">
+                            <path d="M4.654 3c.461 0 .887.035 1.278.14.39.07.711.216.996.391.286.176.497.426.641.747.14.32.216.711.216 1.137 0 .496-.106.922-.356 1.242-.215.32-.566.606-.997.817.606.176 1.067.496 1.348.922.281.426.461.957.461 1.563 0 .496-.105.922-.285 1.278a2.317 2.317 0 0 1-.782.887c-.32.215-.711.39-1.137.496a5.329 5.329 0 0 1-1.278.176L0 12.803V3h4.654zm-.285 3.978c.39 0 .71-.105.957-.285.246-.18.355-.497.355-.887 0-.216-.035-.426-.105-.567a.981.981 0 0 0-.32-.355 1.84 1.84 0 0 0-.461-.176c-.176-.035-.356-.035-.567-.035H2.17v2.31c0-.005 2.2-.005 2.2-.005zm.105 4.193c.215 0 .426-.035.606-.07.176-.035.356-.106.496-.216s.25-.215.356-.39c.07-.176.14-.391.14-.641 0-.496-.14-.852-.426-1.102-.285-.215-.676-.32-1.137-.32H2.17v2.734h2.305v.005zm6.858-.035c.286.285.711.426 1.278.426.39 0 .746-.106 1.032-.286.285-.215.46-.426.53-.64h1.74c-.286.851-.712 1.457-1.278 1.848-.566.355-1.243.566-2.06.566a4.135 4.135 0 0 1-1.527-.285 2.827 2.827 0 0 1-1.137-.782 2.851 2.851 0 0 1-.712-1.172c-.175-.461-.25-.957-.25-1.528 0-.531.07-1.032.25-1.493.18-.46.426-.852.747-1.207.32-.32.711-.606 1.137-.782a4.018 4.018 0 0 1 1.493-.285c.606 0 1.137.105 1.598.355.46.25.817.532 1.102.958.285.39.496.851.641 1.348.07.496.105.996.07 1.563h-5.15c0 .58.21 1.11.496 1.396zm2.24-3.732c-.25-.25-.642-.391-1.103-.391-.32 0-.566.07-.781.176-.215.105-.356.25-.496.39a.957.957 0 0 0-.25.497c-.036.175-.07.32-.07.46h3.196c-.07-.526-.25-.882-.497-1.132zm-3.127-3.728h3.978v.957h-3.978v-.957z" />
+                        </svg>
+                    </a>
+                    <a class="" href="https://dribbble.com/annakhokhlova">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dribbble" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M8 0C3.584 0 0 3.584 0 8s3.584 8 8 8c4.408 0 8-3.584 8-8s-3.592-8-8-8zm5.284 3.688a6.802 6.802 0 0 1 1.545 4.251c-.226-.043-2.482-.503-4.755-.217-.052-.112-.096-.234-.148-.355-.139-.33-.295-.668-.451-.99 2.516-1.023 3.662-2.498 3.81-2.69zM8 1.18c1.735 0 3.323.65 4.53 1.718-.122.174-1.155 1.553-3.584 2.464-1.12-2.056-2.36-3.74-2.551-4A6.95 6.95 0 0 1 8 1.18zm-2.907.642A43.123 43.123 0 0 1 7.627 5.77c-3.193.85-6.013.833-6.317.833a6.865 6.865 0 0 1 3.783-4.78zM1.163 8.01V7.8c.295.01 3.61.053 7.02-.971.199.381.381.772.555 1.162l-.27.078c-3.522 1.137-5.396 4.243-5.553 4.504a6.817 6.817 0 0 1-1.752-4.564zM8 14.837a6.785 6.785 0 0 1-4.19-1.44c.12-.252 1.509-2.924 5.361-4.269.018-.009.026-.009.044-.017a28.246 28.246 0 0 1 1.457 5.18A6.722 6.722 0 0 1 8 14.837zm3.81-1.171c-.07-.417-.435-2.412-1.328-4.868 2.143-.338 4.017.217 4.251.295a6.774 6.774 0 0 1-2.924 4.573z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <button id="btn-back-to-top" type="button" class="fs-2 btn btn-lg btn-primary">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"></path>
+        </svg>
+    </button>
+</body>
+</html>
