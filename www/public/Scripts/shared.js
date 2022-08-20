@@ -22,6 +22,16 @@ $(document).ready(() => {
 
     setTimeout(bounceButtons, 60000);
     scrollTopButton.addEventListener("click", backToTop);
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
 });
 
 function openEmail() {
@@ -33,9 +43,12 @@ function navigate(url) {
     window.location = url;
 }
 
+var timeout = undefined;
+
 function bounceButtons() {
+    clearTimeout(timeout);
     doBounce($("#hit-me-up-button"), 3, "20px", 50);
-    setTimeout(bounceButtons, 60000);
+    timeout = setTimeout(bounceButtons, 60000);
 }
 
 function doBounce(element, times, distance, speed) {
@@ -45,3 +58,5 @@ function doBounce(element, times, distance, speed) {
             .animate({ marginLeft: "+=" + distance }, speed, "linear");
     }
 }
+
+

@@ -1,14 +1,16 @@
 $(document).ready(() => {
     var splide1 = new Splide('#splide1', {
-        cover: true,
-        heightRatio: 0.71111111111,
         type: 'loop',
-        snap: true,
+        perPage: 2,
+        focus: 'left',
+        snap: false,
+        start: 3
 });
     splide1.mount();
     var splide2 = new Splide('#splide2', {
         type: 'loop',
         perPage: 3,
+        perMove: 2,
         focus: 'center',
         autoWidth: true,
         snap: true,

@@ -7,11 +7,11 @@ $(document).ready(() => {
     //    });
     //splide1.mount();
 
-    document.getElementById("helfer-video-1").playbackRate  = 2.0;
+   // document.getElementById("helfer-video-1").playbackRate  = 2.0;
 
     setTimeout(() => {
         resizeHelferPreview();
-        resizeHelferScreenVideos();
+        //resizeHelferScreenVideos();
     }, 10);
 });
 
@@ -150,5 +150,5 @@ function resizeHelferScreenVideos() {
 
 $(window).resize(function () {
     resizeHelferPreview();
-    resizeHelferScreenVideos();
+    /*resizeHelferScreenVideos();*/
 });

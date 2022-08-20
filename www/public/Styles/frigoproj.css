@@ -1,3 +1,21 @@
 .main-container {
     max-width: 72.5rem !important;
 }
+
+.nav-link {
+    color: #f1d00b;
+}
+
+#splide1 .splide__slide__container img {
+    width: 80%;
+    height: auto;
+}
+
+.splide__slide__container img {
+    width: 77%;
+    height: auto;
+}
+
+.frigo-icon {
+    max-width: 50% !important;
+}

@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Anna Khokhlova">
+    <title>Anna Khokhlova Portfolio</title>
+
+    <!-- <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/cover/"> -->
+    <!-- Bootstrap core CSS -->
+    <link href="../Styles/bootstrap.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+            crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/css/splide.min.css" rel="stylesheet" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/js/splide.min.js"></script>
+
+    <!-- Favicons -->
+    <link rel="icon" href="../images/Favicon.svg" sizes="any" type="image/svg+xml">
+
+    <!-- Shared styles and scripts for this template -->
+    <link href="../Styles/shared.css" rel="stylesheet">
+    <script src="../Scripts/shared.js"></script>
+    <!-- Custom styles and scripts for this template -->
+    <script src="../Scripts/helferproj.js"></script>
+    <link href="../Styles/helferproj.css" rel="stylesheet">
+
+</head>
+
+<body class="d-flex flex-column h-auto text-center text-white bg-dark justify-content-start align-items-center">
+    <div class="main-container d-flex w-100 h-auto mx-auto flex-column justify-content-center align-items-start" style="gap: 6.25rem;">
+        <div class="main-container d-flex w-100 h-auto flex-column">
+            <header class="mb-auto container p-0">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="menu-block d-flex justify-content-center align-items-center">
+                        <!--<a class="nav-link-home active p-0" aria-current="page" href="./index.html">
+                            <h1 class="float-md-start mb-0">AKh</h1>
+                        </a>-->
+                        <a class="menu-item text-reset text-decoration-none" href="../en/index.html#scrollWork">My Work</a>
+                        <a class="menu-item text-reset text-decoration-none" href="../en/about.html">About me</a>
+                        <a class="menu-item text-reset text-decoration-none" href="#">CV</a>
+                    </div>
+
+                    <div class="menu-block d-flex justify-content-center align-items-center">
+                        <a id="contact-button" class="menu-item text-reset text-decoration-none" role="button" data-bs-toggle="button" href="mailto:annette.khokhlova@gmail.com?subject=Contact" onclick="openEmail()">Contact</a>
+                        <ul class="menu-item justify-content-center text-reset text-decoration-none">
+                            <li class="menu-item dropdown">
+                                <a class="menu-item text-decoration-none text-reset" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    EN
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                                    <li>
+                                        <a class="dropdown-item" href="../en/helferproj.html">
+                                            <svg xmlns="http://www.w3.org/2000/svg" id="flag-icons-gb" width="16" heigh="16" viewBox="0 0 640 480">
+                                                <path fill="#012169" d="M0 0h640v480H0z" />
+                                                <path fill="#FFF" d="m75 0 244 181L562 0h78v62L400 241l240 178v61h-80L320 301 81 480H0v-60l239-178L0 64V0h75z" />
+                                                <path fill="#C8102E" d="m424 281 216 159v40L369 281h55zm-184 20 6 35L54 480H0l240-179zM640 0v3L391 191l2-44L590 0h50zM0 0l239 176h-60L0 42V0z" />
+                                                <path fill="#FFF" d="M241 0v480h160V0H241zM0 160v160h640V160H0z" />
+                                                <path fill="#C8102E" d="M0 193v96h640v-96H0zM273 0v480h96V0h-96z" />
+                                            </svg> EN
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="../fr/helferproj.html">
+                                            <svg xmlns="http://www.w3.org/2000/svg" id="flag-icons-fr" width="16" heigh="16" viewBox="0 0 640 480">
+                                                <g fill-rule="evenodd" stroke-width="1pt">
+                                                    <path fill="#fff" d="M0 0h640v480H0z" />
+                                                    <path fill="#002654" d="M0 0h213.3v480H0z" />
+                                                    <path fill="#ce1126" d="M426.7 0H640v480H426.7z" />
+                                                </g>
+                                            </svg> FR
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </header>
+        </div>
+
+        <div class="main-container d-flex w-100 h-auto mx-auto flex-column justify-content-between">
+            <div class="container d-flex flex-row justify-content-between align-items-start" style="gap: 1.5rem;">
+                <h1 class="text-start">HELFER Training Apps</h1>
+                <p class="text-start lh-lg">
+                    The goal of this case study was to create two linked ergonomic applications to:
+                    <br />- optimize, organize and simplify the everyday work of the trainer ;
+                    <br />- facilitate the search and selection of the ideal coach and ease following the training programs by trainees.
+                </p>
+            </div>
+        </div>
+
+        <div class="project-description-container main-container d-flex w-100 h-auto mx-auto flex-column">
+            <div class="container d-flex flex-row justify-content-between align-items-start">
+                <div class="d-flex flex-column justify-content-start align-items-start">
+                    <p class="m-0 pb-3 text-start">ROLE</p>
+                    <p class="m-0 text-start">UX Research</p>
+                    <p class="m-0 text-start">Design</p>
+                    <p class="m-0 text-start">Prototyping</p>
+                    <p class="m-0 text-start">Wireframing</p>
+                </div>
+                <div class="d-flex flex-column justify-content-start align-items-start">
+                    <p class="m-0 pb-3 text-start">TEAM</p>
+                    <p class="m-0 text-start">Self-Directed</p>
+                </div>
+                <div class="d-flex flex-column justify-content-start align-items-start">
+                    <p class="m-0 pb-3 text-start">CLIENTS</p>
+                    <p class="m-0 text-start">Helfer (Freelance client)</p>
+                </div>
+                <div class="d-flex flex-column justify-content-start align-items-start">
+                    <p class="m-0 pb-3 text-start">YEAR</p>
+                    <p class="m-0 text-start">Autumn 2021 -</p>
+                    <p class="m-0 text-start">February 2022</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="main-container d-flex w-100 h-auto mx-auto flex-column justify-content-center align-items-start" style="gap: 1.5rem;">
+            <div id="scrollTrainer" class="container d-flex flex-row justify-content-between align-items-end py-5">
+                <h1 class="text-start">Trainer app&nbsp;:</h1>
+                <div class="d-flex flex-row">
+                    <a class="nav-link p-0" href="#scrollTrainee">
+                        <p class="text-start">See Trainee app&nbsp;↓</p>
+                    </a>
+                </div>
+            </div>
+            <div id="helfer-preview-container" class="container d-flex flex-row justify-content-center align-items-center py-5">
+                <img id="helfer-trainer-preview-image-1" src="../images/helfer/iphone-trainer/iPhone12_12Pro2.png" class="helfer-preview-image" alt="" />
+                <img id="helfer-trainer-preview-image-2" src="../images/helfer/iphone-trainer/iPhone12_12Pro7.png" class="helfer-preview-image" alt="" />
+                <img id="helfer-trainer-preview-image-3" src="../images/helfer/iphone-trainer/iPhone12_12Pro3.png" class="helfer-preview-image" alt="" />
+                <img id="helfer-trainer-preview-image-4" src="../images/helfer/iphone-trainer/iPhone12_12Pro4.png" class="helfer-preview-image" alt="" />
+                <img id="helfer-trainer-preview-image-5" src="../images/helfer/iphone-trainer/iPhone12_12Pro5.png" class="helfer-preview-image" alt="" />
+                <img id="helfer-trainer-preview-image-6" src="../images/helfer/iphone-trainer/iPhone12_12Pro.png" class="helfer-preview-image" alt="" />
+                <img id="helfer-trainer-preview-image-7" src="../images/helfer/iphone-trainer/iPhone12_12Pro6.png" class="helfer-preview-image" alt="" />
+            </div>
+        </div>
+
+        <div class="main-container d-flex w-100 mx-auto flex-column justify-content-start align-items-center">
+            <div class="container d-flex flex-column justify-content-center align-items-center" style="gap: 1.5rem;">
+                <h2 class="text-start limit-text-width">Problem :</h2>
+                <p class="m-0 text-start">
+                    One of the most difficult and responsible tasks of a coach is to create a personal training program, taking into account the characteristics of the trainee and follow their training progress. With many clients, creating personal training programs for everyone and managing their achievements can be a real challenge.
+                </p>
+                <p class="m-0 text-start">
+                    After research <span class="text-highlighted">four main components</span> which made a <span class="text-highlighted">negative user experience of the initial version of the app</span> were defined :
+                </p>
+                <p class="m-0 text-start">
+                    - <span class="text-highlighted">Unclear user flow</span> that was understood by client himself only;
+                    <br />- Application <span class="text-highlighted">only covered a part of the whole work</span> process (payment and sending of each training were managed separately);
+                    <br />- <span class="text-highlighted">Creating a personal training</span> was an unmotivated complicated process that <span class="text-highlighted">took a lot of time</span> (about 30 minutes each) that made trainer <span class="text-highlighted">unable to manage a big number of clients</span>;
+                    <br />- <span class="text-highlighted">Lack of responsiveness</span>, as a result impossibility to use application on mobile devices.
+                </p>
+            </div>
+        </div>
+
+        <div class="main-container d-flex w-100 mx-auto flex-column justify-content-start align-items-center">
+            <div class="container d-flex flex-column justify-content-center align-items-center" style="gap: 1.5rem;">
+                <h2 class="text-start limit-text-width">Solution :</h2>
+                <p class="m-0 text-start">
+                    Create a convenient responsive ergonomic tool that allows coaches to train online and in the gym a large number of people at the same time.
+                </p>
+                <p class="m-0 text-start">
+                    <span class="fw-bold">Goals :</span>
+                    <br />- <span class="text-highlighted">Transform the creation of workouts</span> from monotonous and tedious work <span class="text-highlighted">into a streamlined process</span>;
+                </p>
+                <p class="m-0 text-start">- <span class="text-highlighted">Cover and facilitate all subsequent work</span> with students.</p>
+                <p class="m-0 text-start">
+                    <span class="fw-bold">Objectives :</span>
+                    <br />- <span class="text-highlighted">Decrease a time</span> for creating a personal training (make it less than 10 minutes);
+                </p>
+                <p class="m-0 text-start">
+                    - <span class="text-highlighted">Make interface more intuitive</span> so that it can be understood and used by any other coach;
+                </p>
+                <p class="m-0 text-start">
+                    - <span class="text-highlighted">Include payment process and the automatic training sending</span>.
+                </p>
+            </div>
+        </div>
+
+        <div class="main-container d-flex w-100 mx-auto flex-column justify-content-start align-items-center" style="gap: 1.5rem;">
+            <div class="container d-flex flex-row justify-content-center align-items-center">
+                <h2 class="text-start limit-text-width">Initial application</h2>
+            </div>
+            <div class="main-container d-flex w-100 mx-auto flex-row justify-content-start align-items-start" style="gap: 1.5rem;">
+                <div class="col-lg-2">
+                    <img src="../images/helfer/screenshots_gelfer_initialapp/mobile/Screenshot-20220123223345.png" class="img-fluid mx-auto" alt="">
+                </div>
+                <div class="col-lg-2">
+                    <img src="../images/helfer/screenshots_gelfer_initialapp/mobile/Screenshot-20220123224214.png" class="img-fluid mx-auto" alt="">
+                </div>
+                <div class="col-lg-4 d-flex flex-column" style="gap: 1.5rem;">
+                    <img src="../images/helfer/screenshots_gelfer_initialapp/Screenshot_1.png" class="img-fluid mx-auto" alt="">
+                    <img src="../images/helfer/screenshots_gelfer_initialapp/Screenshot_2.png" class="img-fluid mx-auto" alt="">
+                    <img src="../images/helfer/screenshots_gelfer_initialapp/Screenshot_3.png" class="img-fluid mx-auto" alt="">
+                    <img src="../images/helfer/screenshots_gelfer_initialapp/Screenshot_4.png" class="img-fluid mx-auto" alt="">
+                </div>
+                <div class="col-lg-4 d-flex flex-column" style="gap: 1.5rem;">
+                    <img src="../images/helfer/screenshots_gelfer_initialapp/Screenshot_5.png" class="img-fluid mx-auto" alt="">
+                    <img src="../images/helfer/screenshots_gelfer_initialapp/Screenshot_6.png" class="img-fluid mx-auto" alt="">
+                    <img src="../images/helfer/screenshots_gelfer_initialapp/Screenshot_7.png" class="img-fluid mx-auto" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="main-container d-flex w-100 mx-auto flex-column justify-content-start align-items-center" style="gap: 1.5rem;">
+            <div class="container d-flex flex-row justify-content-center align-items-center">
+                <h2 class="text-start limit-text-width">Sketches</h2>
+            </div>
+            <div class="main-container d-flex w-100 mx-auto flex-row justify-content-start align-items-start" style="gap: 1.5rem;">
+                <div class="col-lg-3">
+                    <img src="../images/helfer/sketches/1.png" class="img-fluid mx-auto" alt="">
+                </div>
+                <div class="col-lg-3">
+                    <img src="../images/helfer/sketches/2.png" class="img-fluid mx-auto" alt="">
+                </div>
+                <div class="col-lg-3">
+                    <img src="../images/helfer/sketches/3.png" class="img-fluid mx-auto" alt="">
+                </div>
+                <div class="col-lg-3">
+                    <img src="../images/helfer/sketches/4.png" class="img-fluid mx-auto" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="main-container d-flex w-100 mx-auto flex-column justify-content-start align-items-center" style="gap: 1.5rem;">
+            <div class="container d-flex flex-row justify-content-center align-items-center">
+                <h2 class="text-start limit-text-width">Medium-Fidelity wireframes for registration</h2>
+            </div>
+            <div class="main-container d-flex w-100 mx-auto flex-row justify-content-start align-items-start" style="gap: 1.5rem;">
+                <div class="col-lg-4">
+                    <img src="../images/helfer/helfer_trainer_wireframe/Desktop - 2.png" class="img-fluid mx-auto helfer-wireframe-image">
+                </div>
+                <div class="col-lg-4">
+                    <img src="../images/helfer/helfer_trainer_wireframe/Desktop - 3.png" class="img-fluid mx-auto helfer-wireframe-image">
+                </div>
+                <div class="col-lg-4">
+                    <img src="../images/helfer/helfer_trainer_wireframe/Desktop - 5.png" class="img-fluid mx-auto helfer-wireframe-image">
+                </div>
+            </div>
+            <div class="main-container d-flex w-100 mx-auto flex-row justify-content-start align-items-start" style="gap: 1.5rem;">
+                <div class="col-lg-4 py-2">
+                    <img src="../images/helfer/helfer_trainer_wireframe/Desktop - 8.png" class="img-fluid mx-auto helfer-wireframe-image">
+                </div>
+                <div class="col-lg-4 py-2">
+                    <img src="../images/helfer/helfer_trainer_wireframe/Desktop - 7.png" class="img-fluid mx-auto helfer-wireframe-image">
+                </div>
+                <div class="col-lg-4 py-2">
+                    <img src="../images/helfer/helfer_trainer_wireframe/Desktop - 9.png" class="img-fluid mx-auto helfer-wireframe-image">
+                </div>
+            </div>
+            <div class="main-container d-flex w-100 mx-auto flex-row justify-content-start align-items-start" style="gap: 1.5rem;">
+                <div class="col-lg-4 py-2">
+                    <img src="../images/helfer/helfer_trainer_wireframe/Desktop - 10.png" class="img-fluid mx-auto helfer-wireframe-image">
+                </div>
+                <div class="col-lg-4 py-2">
+                    <img src="../images/helfer/helfer_trainer_wireframe/Desktop - 11.png" class="img-fluid mx-auto helfer-wireframe-image">
+                </div>
+                <div class="col-lg-4 py-2">
+                    <img src="../images/helfer/helfer_trainer_wireframe/Desktop - 12.png" class="img-fluid mx-auto helfer-wireframe-image">
+                </div>
+            </div>
+            <div class="main-container d-flex w-100 mx-auto flex-row justify-content-start align-items-start" style="gap: 1.5rem;">
+                <div class="col-lg-4 py-2">
+                    <img src="../images/helfer/helfer_trainer_wireframe/Desktop - 13.png" class="img-fluid mx-auto helfer-wireframe-image">
+                </div>
+                <div class="col-lg-4 py-2">
+                    <img src="../images/helfer/helfer_trainer_wireframe/Desktop - 14.png" class="img-fluid mx-auto helfer-wireframe-image">
+                </div>
+                <div class="col-lg-4 py-2">
+                    <img src="../images/helfer/helfer_trainer_wireframe/Desktop - 16.png" class="img-fluid mx-auto helfer-wireframe-image">
+                </div>
+            </div>
+        </div>
+
+        <div class="main-container d-flex w-100 mx-auto flex-column justify-content-start align-items-center" style="gap: 1.5rem;">
+            <div class="container d-flex flex-row justify-content-center align-items-center">
+                <h2 class="text-start limit-text-width">High fidelity app mockup, prototype</h2>
+            </div>
+
+            <div class="main-container d-flex w-100 mx-auto flex-row justify-content-between align-items-center">
+                <div class="main-container d-flex w-100 mx-auto flex-column justify-content-start align-items-center" style="gap: 1.5rem;">
+                    <p>CREATION OF AN EXERCISE</p>
+                    <div class="helfer-screen-player-container">
+                        <img class="helfer-gif" src="../images/helfer/Videos-Trainer/helfer_gif_1.gif" alt="" />
+                    </div>
+                </div>
+                <div class="main-container d-flex w-100 mx-auto flex-column justify-content-start align-items-center" style="gap: 1.5rem;">
+                    <p>CREATION OF A TRAINING PROGRAM</p>
+                    <div class="helfer-screen-player-container">
+                        <img class="helfer-gif"  src="../images/helfer/Videos-Trainer/helfer_gif_2.gif" alt="" />
+                    </div>
+                </div>
+                <div class="main-container d-flex w-100 mx-auto flex-column justify-content-start align-items-center" style="gap: 1.5rem;">
+                    <p>CREATION OF A TRAINING</p>
+                    <div class="helfer-screen-player-container">
+                        <img class="helfer-gif" src="../images/helfer/Videos-Trainer/helfer_gif_3.gif" alt="" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-container d-flex w-100 mx-auto flex-column justify-content-start align-items-center">
+            <div class="container d-flex flex-column justify-content-center align-items-center" style="gap: 1.5rem;">
+                <h2 class="text-start limit-text-width">Results :</h2>
+                <p class="m-0 text-start">
+                    1. <span class="text-highlighted">The process from A to Z is optimized</span> in such a way that both the creation of workouts and the <span class="text-highlighted">management of trainees and other daily tasks</span> that a coach has to solve <span class="text-highlighted">require a minimum amount of time and effort</span>.
+                </p>
+                <p class="m-0 text-start">
+                    2. <span class="text-highlighted">Uncertainty reduced by automated secured payment</span> and configurable automated workout sending.
+                </p>
+                <p class="m-0 text-start">
+                    3. Being both simple and convenient, the use of the product, in turn, also led to an <span class="text-highlighted">improvement in the quality of the workouts</span> compiled and <span class="text-highlighted">reduced the workload of the trainer</span>.
+                </p>
+            </div>
+        </div>
+
+        <div class="main-container d-flex w-100 h-auto mx-auto flex-column justify-content-center align-items-start" style="gap: 1.5rem;">
+            <div id="scrollTrainee" class="container d-flex flex-row justify-content-between align-items-end py-5">
+                <h1 class="text-start">Trainee app&nbsp;:</h1>
+                <div class="d-flex flex-row">
+                    <a class="nav-link p-0" href="#scrollTrainer">
+                        <p class="text-start">See Trainer app&nbsp;↑</p>
+                    </a>
+                </div>
+            </div>
+            <div id="helfer-preview-container" class="container d-flex flex-row justify-content-center align-items-center py-5">
+                <img id="helfer-trainee-preview-image-1" src="../images/helfer/iphone-trainee/iPhone12_12Pro6.png" class="helfer-preview-image" alt="" />
+                <img id="helfer-trainee-preview-image-2" src="../images/helfer/iphone-trainee/iPhone12_12Pro7.png" class="helfer-preview-image" alt="" />
+                <img id="helfer-trainee-preview-image-3" src="../images/helfer/iphone-trainee/iPhone12_12Pro3.png" class="helfer-preview-image" alt="" />
+                <img id="helfer-trainee-preview-image-4" src="../images/helfer/iphone-trainee/iPhone12_12Pro4.png" class="helfer-preview-image" alt="" />
+                <img id="helfer-trainee-preview-image-5" src="../images/helfer/iphone-trainee/iPhone12_12Pro5.png" class="helfer-preview-image" alt="" />
+                <img id="helfer-trainee-preview-image-6" src="../images/helfer/iphone-trainee/iPhone12_12Pro.png" class="helfer-preview-image" alt="" />
+                <img id="helfer-trainee-preview-image-7" src="../images/helfer/iphone-trainee/iPhone12_12Pro2.png" class="helfer-preview-image" alt="" />
+            </div>
+        </div>
+
+        <div class="main-container d-flex w-100 mx-auto flex-column justify-content-start align-items-center">
+            <div class="container d-flex flex-column justify-content-center align-items-center" style="gap: 1.5rem;">
+                <h2 class="text-start limit-text-width">Problem :</h2>
+                <p class="m-0 text-start">
+                    With the increase of the number of “easy certification” it becomes more and more challenging to find a good trainer with personal approach. And even after finding the one it is hard to stay motivated throughout the training process without clear program and workout structure and feedback.
+                </p>
+                <p class="m-0 text-start">
+                    After research through the trainees these are the main statements :
+                    <br />- <span class="text-highlighted">Lack of information</span> about trainers knowledge and experience makes it <span class="text-highlighted">hard to choose one</span>;
+                </p>
+                <p class="m-0 text-start">
+                    - Most of the online coaching systems propose <span class="text-highlighted">generic programs that are not personalized</span>;
+                </p>
+                <p class="m-0 text-start">
+                    - <span class="text-highlighted">Having no feedback makes it scary</span> to do several exercises in order not to get traumatized;
+                </p>
+                <p class="m-0 text-start">
+                    - <span class="text-highlighted">Lack of monitoring</span> of the progress from the trainer side leads to the <span class="text-highlighted">decrease of the motivation</span>.
+                </p>
+            </div>
+        </div>
+
+        <div class="main-container d-flex w-100 mx-auto flex-column justify-content-start align-items-center">
+            <div class="container d-flex flex-column justify-content-center align-items-center" style="gap: 1.5rem;">
+                <h2 class="text-start limit-text-width">Solution :</h2>
+                <p class="m-0 text-start">
+                    Create an application where trainees could easily find a trainer they need, get a personal training program and a quality monitoring by a coach.
+                </p>
+                <p class="m-0 text-start">
+                    <span class="fw-bold">Goal</span> :
+                    <br />- Allow students to learn from unique specialists, <span class="text-highlighted">select the ideal coach</span>, taking into account individual needs and <span class="text-highlighted">receive high-quality personalized training programs</span>.
+                </p>
+                <p class="m-0 text-start">
+                    <span class="fw-bold">Objectives</span> :
+                    <br />- <span class="text-highlighted">Facilitate the search and selection of the trainer</span> by personal criteria;
+                </p>
+                <p class="m-0 text-start">
+                    - Save trainees time by <span class="text-highlighted">optimizing the program order process</span>;
+                </p>
+                <p class="m-0 text-start">
+                    - <span class="text-highlighted">Make it easy</span> for a student <span class="text-highlighted">to stay in connection with trainer</span> and receive feedback and motivation.
+                </p>
+            </div>
+        </div>
+
+        <div class="main-container d-flex w-100 mx-auto flex-column justify-content-start align-items-center">
+            <div class="container d-flex flex-column justify-content-center align-items-center" style="gap: 1.5rem;">
+                <h2 class="text-start limit-text-width">First designs</h2>
+                <p class="m-0 text-start">
+                    <span class="text-highlighted">A general problem of the initial designs</span> was the <span class="text-highlighted">lack of design consistency</span>, they were <span class="text-highlighted">incomplete and did not reflect all the needed HMI interactions</span>.
+                </p>
+                <p class="m-0 text-start">
+                    My solution was to <span class="text-highlighted">unify the entire interface</span> and think through and <span class="text-highlighted">provide every screen state</span> throughout the user flow.
+                </p>
+            </div>
+        </div>
+
+        <div class="main-container d-flex w-100 mx-auto flex-row justify-content-start align-items-start" style="gap: 1.5rem;">
+            <div class="container d-flex flex-column justify-content-center align-items-center" style="gap: 1.5rem;">
+                <img src="../images/helfer/trainee_initial_designs/Login.png" class="first-design-image img-fluid mx-auto" alt="" />
+                <img src="../images/helfer/trainee_initial_designs/Search (results).png" class="first-design-image img-fluid mx-auto" alt="" />
+                <img src="../images/helfer/trainee_initial_designs/Schedule (empty).png" class="first-design-image img-fluid mx-auto" alt="" />
+            </div>
+            <div class="container d-flex flex-column justify-content-center align-items-center" style="gap: 1.5rem;">
+                <img src="../images/helfer/trainee_initial_designs/Sign up.png" class="first-design-image img-fluid mx-auto" alt="" />
+                <img src="../images/helfer/trainee_initial_designs/Trainer profile.png" class="first-design-image img-fluid mx-auto" alt="" />
+                <img src="../images/helfer/trainee_initial_designs/Schedule list.png" class="first-design-image img-fluid mx-auto" alt="" />
+            </div>
+            <div class="container d-flex flex-column justify-content-center align-items-center" style="gap: 1.5rem;">
+                <img src="../images/helfer/trainee_initial_designs/Email login.png" class="first-design-image img-fluid mx-auto" alt="" />
+                <img src="../images/helfer/trainee_initial_designs/Search (empty).png" class="first-design-image img-fluid mx-auto" alt="" />
+                <img src="../images/helfer/trainee_initial_designs/Chat.png" class="first-design-image img-fluid mx-auto" alt="" />
+                <img src="../images/helfer/trainee_initial_designs/Messages list.png" class="first-design-image img-fluid mx-auto" alt="" />
+            </div>
+            <div class="container d-flex flex-column justify-content-center align-items-center" style="gap: 1.5rem;">
+                <img src="../images/helfer/trainee_initial_designs/Email register.png" class="first-design-image img-fluid mx-auto" alt="" />
+                <img src="../images/helfer/trainee_initial_designs/Training.png" class="first-design-image img-fluid mx-auto" alt="" />
+            </div>
+        </div>
+
+        <div class="main-container d-flex w-100 mx-auto flex-column justify-content-start align-items-center" style="gap: 1.5rem;">
+            <div class="container d-flex flex-row justify-content-center align-items-center">
+                <h2 class="text-start limit-text-width">High fidelity app mockup, prototype</h2>
+            </div>
+
+            <div class="main-container d-flex w-100 mx-auto flex-row justify-content-between align-items-center">
+                <div class="main-container d-flex w-100 mx-auto flex-column justify-content-start align-items-center" style="gap: 1.5rem;">
+                    <p>FINDING COACH, BUYING TRAINING PROGRAM</p>
+                    <div class="helfer-screen-player-container">
+                        <img class="helfer-gif" src="../images/helfer/Videos-Trainee/helfer_gif_4.gif" alt="" />
+                    </div>
+                </div>
+                <div class="main-container d-flex w-100 mx-auto flex-column justify-content-start align-items-center" style="gap: 1.5rem;">
+                    <p>DOING TRAINING, CONFIRMING EXERCISE</p>
+                    <div class="helfer-screen-player-container">
+                        <img class="helfer-gif" src="../images/helfer/Videos-Trainee/helfer_gif_5.gif" alt="" />
+                    </div>
+                </div>
+                <div class="main-container d-flex w-100 mx-auto flex-column justify-content-start align-items-center" style="gap: 1.5rem;">
+                    <p>MY ACCOUNT, SETTING GOALS</p>
+                    <div class="helfer-screen-player-container">
+                        <img class="helfer-gif" src="../images/helfer/Videos-Trainee/helfer_gif_6.gif" alt="" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-container d-flex w-100 mx-auto flex-column justify-content-start align-items-center">
+            <div class="container d-flex flex-column justify-content-center align-items-center" style="gap: 1.5rem;">
+                <h2 class="text-start limit-text-width">Results :</h2>
+                <p class="m-0 text-start">
+                    1. Product is usable and <span class="text-highlighted">helps to find a coach with ease</span>. The search is categorized and has a clear useful filter that can be used to narrow the results.
+                </p>
+                <p class="m-0 text-start">
+                    2. The whole process is well thought-through : <span class="text-highlighted">screens and screen states cover all the possible scenarios</span> and user flows.
+                </p>
+                <p class="m-0 text-start">
+                    3. <span class="text-highlighted">User is provided with feedback</span> from the trainer <span class="text-highlighted">and an organized personalized training plan</span> that is easy to follow with the app, as well as set and reach sports objectives.
+                </p>
+                <p class="m-0 text-start">
+                    4. <span class="text-highlighted">The ordering of the program and payment is secured and transparent</span>.
+                </p>
+            </div>
+        </div>
+
+
+        <div class="main-container d-flex w-100 mx-auto flex-row justify-content-end align-items-center">
+            <a class="next proj-nav nav-link d-flex" href="../en/frigoproj.html">
+                <div class="d-inline-block">
+                    Next project
+                    <h2>Frigo app</h2>
+                </div>
+                <svg xmlns="http://www.w3.org/2000/svg" height="64" width="64" fill="currentColor" class="d-inline-block bi bi-caret-right-fill" viewBox="0 0 16 16">
+                    <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
+                </svg>
+            </a>
+        </div>
+        <div id="attention-container" class="main-container d-flex w-100 h-auto mx-auto flex-column">
+            <div class="w-100 d-flex container align-items-center justify-content-center flex-wrap flex-column">
+                <h1 class="fs-2 text-center">Do I have your attention?</h1>
+                <a id="hit-me-up-button" class="fs-2 text-center text-reset text-decoration-none btn btn-lg btn-primary" role="button" data-bs-toggle="button" href="mailto:annette.khokhlova@gmail.com?subject=Contact" onclick="openEmail()">Hit me up</a>
+            </div>
+        </div>
+    </div>
+    <div class="main-container d-flex w-100 h-auto mx-auto flex-column">
+        <footer class="mt-auto container">
+            <div class="row align-items-center justify-content-center">
+                <p class="m-0 col text-start"> © Anna Khokhlova 2022 </p>
+                <div id="contacts-container" class="col d-flex justify-content-end align-items-center">
+                    <a class="" href="mailto:annette.khokhlova@gmail.com?subject=Contact">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                            <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z" />
+                        </svg>
+                    </a>
+                    <a class="" href="https://www.linkedin.com/in/anna-khokhlova/">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                            <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+                        </svg>
+                    </a>
+                    <a class="" href="https://www.behance.net/anna-khokhlova">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-behance" viewBox="0 0 16 16">
+                            <path d="M4.654 3c.461 0 .887.035 1.278.14.39.07.711.216.996.391.286.176.497.426.641.747.14.32.216.711.216 1.137 0 .496-.106.922-.356 1.242-.215.32-.566.606-.997.817.606.176 1.067.496 1.348.922.281.426.461.957.461 1.563 0 .496-.105.922-.285 1.278a2.317 2.317 0 0 1-.782.887c-.32.215-.711.39-1.137.496a5.329 5.329 0 0 1-1.278.176L0 12.803V3h4.654zm-.285 3.978c.39 0 .71-.105.957-.285.246-.18.355-.497.355-.887 0-.216-.035-.426-.105-.567a.981.981 0 0 0-.32-.355 1.84 1.84 0 0 0-.461-.176c-.176-.035-.356-.035-.567-.035H2.17v2.31c0-.005 2.2-.005 2.2-.005zm.105 4.193c.215 0 .426-.035.606-.07.176-.035.356-.106.496-.216s.25-.215.356-.39c.07-.176.14-.391.14-.641 0-.496-.14-.852-.426-1.102-.285-.215-.676-.32-1.137-.32H2.17v2.734h2.305v.005zm6.858-.035c.286.285.711.426 1.278.426.39 0 .746-.106 1.032-.286.285-.215.46-.426.53-.64h1.74c-.286.851-.712 1.457-1.278 1.848-.566.355-1.243.566-2.06.566a4.135 4.135 0 0 1-1.527-.285 2.827 2.827 0 0 1-1.137-.782 2.851 2.851 0 0 1-.712-1.172c-.175-.461-.25-.957-.25-1.528 0-.531.07-1.032.25-1.493.18-.46.426-.852.747-1.207.32-.32.711-.606 1.137-.782a4.018 4.018 0 0 1 1.493-.285c.606 0 1.137.105 1.598.355.46.25.817.532 1.102.958.285.39.496.851.641 1.348.07.496.105.996.07 1.563h-5.15c0 .58.21 1.11.496 1.396zm2.24-3.732c-.25-.25-.642-.391-1.103-.391-.32 0-.566.07-.781.176-.215.105-.356.25-.496.39a.957.957 0 0 0-.25.497c-.036.175-.07.32-.07.46h3.196c-.07-.526-.25-.882-.497-1.132zm-3.127-3.728h3.978v.957h-3.978v-.957z" />
+                        </svg>
+                    </a>
+                    <a class="" href="https://dribbble.com/annakhokhlova">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dribbble" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M8 0C3.584 0 0 3.584 0 8s3.584 8 8 8c4.408 0 8-3.584 8-8s-3.592-8-8-8zm5.284 3.688a6.802 6.802 0 0 1 1.545 4.251c-.226-.043-2.482-.503-4.755-.217-.052-.112-.096-.234-.148-.355-.139-.33-.295-.668-.451-.99 2.516-1.023 3.662-2.498 3.81-2.69zM8 1.18c1.735 0 3.323.65 4.53 1.718-.122.174-1.155 1.553-3.584 2.464-1.12-2.056-2.36-3.74-2.551-4A6.95 6.95 0 0 1 8 1.18zm-2.907.642A43.123 43.123 0 0 1 7.627 5.77c-3.193.85-6.013.833-6.317.833a6.865 6.865 0 0 1 3.783-4.78zM1.163 8.01V7.8c.295.01 3.61.053 7.02-.971.199.381.381.772.555 1.162l-.27.078c-3.522 1.137-5.396 4.243-5.553 4.504a6.817 6.817 0 0 1-1.752-4.564zM8 14.837a6.785 6.785 0 0 1-4.19-1.44c.12-.252 1.509-2.924 5.361-4.269.018-.009.026-.009.044-.017a28.246 28.246 0 0 1 1.457 5.18A6.722 6.722 0 0 1 8 14.837zm3.81-1.171c-.07-.417-.435-2.412-1.328-4.868 2.143-.338 4.017.217 4.251.295a6.774 6.774 0 0 1-2.924 4.573z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <button id="btn-back-to-top" type="button" class="fs-2 btn btn-lg btn-primary">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"></path>
+        </svg>
+    </button>
+</body>
+</html>

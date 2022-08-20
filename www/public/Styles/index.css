@@ -30,6 +30,7 @@
 .frigo-preview-container {
     width: 100px;
     overflow: hidden;
+    margin: auto;
 }
 
 .frigo-preview-image {
@@ -38,21 +39,7 @@
 }
 
 #frigo-preview-image-1 {
-    z-index: 1;
-}
-
-#frigo-preview-image-2 {
-    top: -330px;
-    left: 400px;
-    z-index: 3;
-}
-
-#frigo-preview-video-3 {
-    position: relative;
     z-index: 2;
-    top: -278px;
-    left: -48px;
-    object-fit: cover;
 }
 
 .helfer-preview-container {
