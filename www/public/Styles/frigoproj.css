@@ -17,5 +17,16 @@
 }
 
 .frigo-icon {
-    max-width: 50% !important;
+    max-width: 80% !important;
+}
+
+
+#frigo-screen-1 {
+    height: auto;
+    max-width: 52%;
+    width: 52%;
+}
+
+.concept-image {
+    max-width: 25% !important;
 }
