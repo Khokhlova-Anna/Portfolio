@@ -256,3 +256,7 @@ footer {
 .splide__track {
     padding-bottom: 3rem;
 }
+
+.dropdown-menu-dark {
+    background: #3f4a7b !important;
+}

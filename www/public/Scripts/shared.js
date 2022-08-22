@@ -39,8 +39,11 @@ function openEmail() {
     window.open("mailto:annette.khokhlova@gmail.com?subject=Contact", '_blank');
 }
 
-function navigate(url) {
-    window.location = url;
+function navigate(url, target = false) {
+    if (target)
+        window.open(url, '_blank').focus();
+    else 
+        window.location = url;
 }
 
 var timeout = undefined;
