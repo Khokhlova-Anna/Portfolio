@@ -23,8 +23,9 @@ function resizeCanvas() {
     var img = new Image();
 
     var ang = 0; //angle
-    var fps = 1000 / 144; //number of frames per sec
-    img.onload = function () { //on image load do the following stuff
+    var fps = 1000 / 60; //number of frames per sec
+    img.onload = function () {
+        clearInterval(interval);//on image load do the following stuff
         canvasLeft.width = width; //double the canvas width
         canvasLeft.height = $mainBackgroundContainer.height(); //double the canvas height
 
