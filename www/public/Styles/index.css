@@ -160,3 +160,10 @@
 #featurette-head {
     padding-bottom: 1.5rem;
 }
+
+
+@media screen and (max-width: 1160px) {
+    #header-menu-mobile {
+        padding: 0 1rem 0 1rem !important;
+    }
+}

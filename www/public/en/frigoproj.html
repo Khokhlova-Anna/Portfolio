@@ -36,7 +36,59 @@
 <body class="d-flex flex-column h-auto text-center text-white bg-dark justify-content-start align-items-center">
     <div class="main-container d-flex w-100 h-auto mx-auto flex-column justify-content-center align-items-start" style="gap: 6.25rem;">
         <div class="main-container d-flex w-100 h-auto flex-column">
-            <header class="mb-auto container p-0">
+            <header id="header-menu-mobile" class="mb-auto container p-0">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="menu-block d-flex justify-content-center align-items-center dropdown">
+                        <button id="menu-list-mobile" type="button" class="btn btn-secondary" type="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"></path>
+                            </svg>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-dark " aria-labelledby="menu-list-mobile" style="padding: 1rem;">
+                            <li><a class="menu-item text-reset text-decoration-none" href="../en/index.html#scrollWork">My Work</a></li>
+                            <li><a class="menu-item text-reset text-decoration-none" href="../en/about.html">About me</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="menu-item text-reset text-decoration-none" role="button" data-bs-toggle="button" href="mailto:annette.khokhlova@gmail.com?subject=Contact" onclick="openEmail()">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="menu-block d-flex justify-content-center align-items-center">
+                        <a class="menu-item text-reset text-decoration-none" href="../CV-UXUI-Khokhlova-EN.pdf">CV</a>
+
+                        <ul class="menu-item justify-content-center text-reset text-decoration-none">
+                            <li class="menu-item dropdown">
+                                <a class="menu-item text-decoration-none text-reset dropdown-toggle" id="navbarDarkDropdownMenuLink-mobile" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    EN
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink-mobile">
+                                    <li>
+                                        <a class="dropdown-item" href="../en/frigoproj.html">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" heigh="16" viewBox="0 0 640 480">
+                                                <path fill="#012169" d="M0 0h640v480H0z" />
+                                                <path fill="#FFF" d="m75 0 244 181L562 0h78v62L400 241l240 178v61h-80L320 301 81 480H0v-60l239-178L0 64V0h75z" />
+                                                <path fill="#C8102E" d="m424 281 216 159v40L369 281h55zm-184 20 6 35L54 480H0l240-179zM640 0v3L391 191l2-44L590 0h50zM0 0l239 176h-60L0 42V0z" />
+                                                <path fill="#FFF" d="M241 0v480h160V0H241zM0 160v160h640V160H0z" />
+                                                <path fill="#C8102E" d="M0 193v96h640v-96H0zM273 0v480h96V0h-96z" />
+                                            </svg> EN
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="../fr/frigoproj.html">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" heigh="16" viewBox="0 0 640 480">
+                                                <g fill-rule="evenodd" stroke-width="1pt">
+                                                    <path fill="#fff" d="M0 0h640v480H0z" />
+                                                    <path fill="#002654" d="M0 0h213.3v480H0z" />
+                                                    <path fill="#ce1126" d="M426.7 0H640v480H426.7z" />
+                                                </g>
+                                            </svg> FR
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </header>
+            <header id="header-menu" class="mb-auto container p-0">
                 <div class="d-flex justify-content-between align-items-center">
                     <div class="menu-block d-flex justify-content-center align-items-center">
                         <!--<a class="nav-link-home active p-0" aria-current="page" href="./index.html">
@@ -86,7 +138,7 @@
         </div>
 
         <div class="main-container d-flex w-100 h-auto mx-auto flex-column justify-content-between">
-            <div class="container d-flex flex-row justify-content-between align-items-start">
+            <div class="container d-flex flex-row justify-content-between align-items-start mobile-switch-direction-container">
                 <h1 class="">Frigo App</h1>
                 <p class="text-start lh-lg">The goal of this case study was to create an easy to use intuitive application that fulfils one main goal - simplify and organize shopping.</p>
             </div>
@@ -144,7 +196,7 @@
                     <h2 class="text-start limit-text-width">Step 1. Concept</h2>
                 </div>
 
-                <div class="main-container d-flex w-100 mx-auto flex-row justify-content-start align-items-center" style="gap: 2.5rem;">
+                <div class="main-container d-flex w-100 mx-auto flex-row justify-content-start align-items-center mobile-switch-direction-container" style="gap: 2.5rem;">
                     <div class="col image-col">
                         <div class="row mb-3">
                             <img src="../images/frigo/planningapps/260a84021f203c3bc1.jpg" class="concept-image img-fluid mx-auto" alt="">
@@ -194,7 +246,7 @@
                 <div class="container d-flex flex-row justify-content-center align-items-center">
                     <h2 class="text-start limit-text-width">Iterations :</h2>
                 </div>
-                <div class="main-container d-flex w-100 mx-auto flex-row justify-content-start align-items-start" style="gap: 2.5rem;">
+                <div class="main-container d-flex w-100 mx-auto flex-row justify-content-start align-items-start mobile-switch-direction-container" style="gap: 2.5rem;">
                     <div class="col-lg-6 image-col">
                         <img src="../images/frigo/20220820_155628.jpg" class="img-fluid mx-auto" alt="" style="max-width: 55%;">
                     </div>
@@ -246,7 +298,7 @@
             <div class="container d-flex flex-row justify-content-center align-items-center">
                 <h2 class="text-start limit-text-width">Step 3 : Style guide</h2>
             </div>
-            <div class="main-container d-flex w-100 mx-auto flex-row justify-content-start align-items-start" style="gap: 2.5rem;">
+            <div class="main-container d-flex w-100 mx-auto flex-row justify-content-start align-items-start mobile-switch-direction-container" style="gap: 2.5rem;">
                 <div class="col image-col">
                     <img src="../images/frigo/style_guide_colors.png" class="img-fluid mx-auto" alt="">
                 </div>
@@ -374,7 +426,7 @@
             <div class="container d-flex flex-row justify-content-center align-items-center">
                 <h2 class="text-start limit-text-width">Step 5 : Prototyping</h2>
             </div>
-            <div class="main-container d-flex w-100 mx-auto flex-row justify-content-start align-items-center" style="gap: 2.5rem;">
+            <div class="main-container d-flex w-100 mx-auto flex-row justify-content-start align-items-center mobile-switch-direction-container" style="gap: 2.5rem;">
                 <div class="col image-col">
                     <video id="frigo-screen-1" autoplay muted>
                         <source src="../images/frigo/frigo-gif-1.webm"
@@ -396,7 +448,7 @@
                 <div class="container d-flex flex-row justify-content-center align-items-center">
                     <h2 class="text-start limit-text-width">Step 6 : Usability test</h2>
                 </div>
-                <div class="main-container d-flex w-100 mx-auto flex-row justify-content-start align-items-center" style="gap: 2.5rem;">
+                <div class="main-container d-flex w-100 mx-auto flex-row justify-content-start align-items-center mobile-switch-direction-container" style="gap: 2.5rem;">
                     <div class="col usability-test-player-column">
                         <iframe id="usability-test-player" src="https://drive.google.com/file/d/1ZxtvqsuMIjEIJV89fqt2iJGEv4phf4yi/preview" width="300" height="200" allow="autoplay"></iframe>
                     </div>

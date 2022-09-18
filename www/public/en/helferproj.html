@@ -36,12 +36,64 @@
 <body class="d-flex flex-column h-auto text-center text-white bg-dark justify-content-start align-items-center">
     <div class="main-container d-flex w-100 h-auto mx-auto flex-column justify-content-center align-items-start" style="gap: 6.25rem;">
         <div class="main-container d-flex w-100 h-auto flex-column">
-            <header class="mb-auto container p-0">
+            <header id="header-menu-mobile" class="mb-auto container p-0">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="menu-block d-flex justify-content-center align-items-center dropdown">
+                        <button id="menu-list-mobile" type="button" class="btn btn-secondary" type="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"></path>
+                            </svg>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-dark " aria-labelledby="menu-list-mobile" style="padding: 1rem;">
+                            <li><a class="menu-item text-reset text-decoration-none" href="../en/index.html#scrollWork">My Work</a></li>
+                            <li><a class="menu-item text-reset text-decoration-none" href="../en/about.html">About me</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="menu-item text-reset text-decoration-none" role="button" data-bs-toggle="button" href="mailto:annette.khokhlova@gmail.com?subject=Contact" onclick="openEmail()">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="menu-block d-flex justify-content-center align-items-center">
+                        <a class="menu-item text-reset text-decoration-none" href="../CV-UXUI-Khokhlova-EN.pdf">CV</a>
+
+                        <ul class="menu-item justify-content-center text-reset text-decoration-none">
+                            <li class="menu-item dropdown">
+                                <a class="menu-item text-decoration-none text-reset dropdown-toggle" id="navbarDarkDropdownMenuLink-mobile" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    EN
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink-mobile">
+                                    <li>
+                                        <a class="dropdown-item" href="../en/helferproj.html">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" heigh="16" viewBox="0 0 640 480">
+                                                <path fill="#012169" d="M0 0h640v480H0z" />
+                                                <path fill="#FFF" d="m75 0 244 181L562 0h78v62L400 241l240 178v61h-80L320 301 81 480H0v-60l239-178L0 64V0h75z" />
+                                                <path fill="#C8102E" d="m424 281 216 159v40L369 281h55zm-184 20 6 35L54 480H0l240-179zM640 0v3L391 191l2-44L590 0h50zM0 0l239 176h-60L0 42V0z" />
+                                                <path fill="#FFF" d="M241 0v480h160V0H241zM0 160v160h640V160H0z" />
+                                                <path fill="#C8102E" d="M0 193v96h640v-96H0zM273 0v480h96V0h-96z" />
+                                            </svg> EN
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="../fr/helferproj.html">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" heigh="16" viewBox="0 0 640 480">
+                                                <g fill-rule="evenodd" stroke-width="1pt">
+                                                    <path fill="#fff" d="M0 0h640v480H0z" />
+                                                    <path fill="#002654" d="M0 0h213.3v480H0z" />
+                                                    <path fill="#ce1126" d="M426.7 0H640v480H426.7z" />
+                                                </g>
+                                            </svg> FR
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </header>
+            <header id="header-menu" class="mb-auto container p-0">
                 <div class="d-flex justify-content-between align-items-center">
                     <div class="menu-block d-flex justify-content-center align-items-center">
                         <!--<a class="nav-link-home active p-0" aria-current="page" href="./index.html">
-                            <h1 class="float-md-start mb-0">AKh</h1>
-                        </a>-->
+                    <h1 class="float-md-start mb-0">AKh</h1>
+                </a>-->
                         <a class="menu-item text-reset text-decoration-none" href="../en/index.html#scrollWork">My Work</a>
                         <a class="menu-item text-reset text-decoration-none" href="../en/about.html">About me</a>
                         <a class="menu-item text-reset text-decoration-none" href="../CV-UXUI-Khokhlova-EN.pdf" target="_blank">CV</a>
@@ -86,7 +138,7 @@
         </div>
 
         <div class="main-container d-flex w-100 h-auto mx-auto flex-column justify-content-between">
-            <div class="container d-flex flex-row justify-content-between align-items-start" style="gap: 1.5rem;">
+            <div class="container d-flex flex-row justify-content-between align-items-start mobile-switch-direction-container" style="gap: 1.5rem;">
                 <h1 class="text-start">HELFER Training Apps</h1>
                 <p class="text-start lh-lg">
                     The goal of this case study was to create two linked ergonomic applications to:
@@ -123,15 +175,15 @@
 
 
         <div class="main-container d-flex w-100 h-auto mx-auto flex-column justify-content-center align-items-start" style="gap: 1.5rem;">
-            <div id="scrollTrainer" class="container d-flex flex-row justify-content-between align-items-end py-5">
-                <h1 class="text-start">Trainer app&nbsp;:</h1>
+            <div id="scrollTrainer" class="container d-flex flex-row justify-content-between align-items-end py-5 mobile-switch-direction-container">
+                <h1 class="text-start">Trainer&nbsp;app&nbsp;:</h1>
                 <div class="d-flex flex-row">
                     <a class="nav-link p-0" href="#scrollTrainee">
                         <p class="text-start">See Trainee app&nbsp;↓</p>
                     </a>
                 </div>
             </div>
-            <div id="helfer-preview-container" class="container d-flex flex-row justify-content-center align-items-center py-5">
+            <div class="helfer-preview-container container d-flex flex-row justify-content-center align-items-center py-5">
                 <img id="helfer-trainer-preview-image-1" src="../images/helfer/iphone-trainer/iPhone12_12Pro2.png" class="helfer-preview-image" alt="" />
                 <img id="helfer-trainer-preview-image-2" src="../images/helfer/iphone-trainer/iPhone12_12Pro7.png" class="helfer-preview-image" alt="" />
                 <img id="helfer-trainer-preview-image-3" src="../images/helfer/iphone-trainer/iPhone12_12Pro3.png" class="helfer-preview-image" alt="" />
@@ -188,7 +240,7 @@
             <div class="container d-flex flex-row justify-content-center align-items-center">
                 <h2 class="text-start limit-text-width">Initial application</h2>
             </div>
-            <div class="main-container d-flex w-100 mx-auto flex-row justify-content-start align-items-start" style="gap: 1.5rem;">
+            <div class="main-container d-flex w-100 mx-auto flex-row justify-content-start align-items-start mobile-switch-direction-container" style="gap: 1.5rem;">
                 <div class="col-lg-2">
                     <img src="../images/helfer/screenshots_gelfer_initialapp/mobile/Screenshot-20220123223345.png" class="img-fluid mx-auto" alt="">
                 </div>
@@ -213,7 +265,7 @@
             <div class="container d-flex flex-row justify-content-center align-items-center">
                 <h2 class="text-start limit-text-width">Sketches</h2>
             </div>
-            <div class="main-container d-flex w-100 mx-auto flex-row justify-content-start align-items-start" style="gap: 1.5rem;">
+            <div class="main-container d-flex w-100 mx-auto flex-row justify-content-start align-items-start mobile-switch-direction-container" style="gap: 1.5rem;">
                 <div class="col-lg-3">
                     <img src="../images/helfer/sketches/1.png" class="img-fluid mx-auto" alt="">
                 </div>
@@ -233,7 +285,7 @@
             <div class="container d-flex flex-row justify-content-center align-items-center">
                 <h2 class="text-start limit-text-width">Medium-Fidelity wireframes for registration</h2>
             </div>
-            <div class="main-container d-flex w-100 mx-auto flex-row justify-content-start align-items-start" style="gap: 1.5rem;">
+            <div class="main-container d-flex w-100 mx-auto flex-row justify-content-start align-items-start mobile-switch-direction-container" style="gap: 1.5rem;">
                 <div class="col-lg-4">
                     <img src="../images/helfer/helfer_trainer_wireframe/Desktop - 2.png" class="img-fluid mx-auto helfer-wireframe-image">
                 </div>
@@ -244,7 +296,7 @@
                     <img src="../images/helfer/helfer_trainer_wireframe/Desktop - 5.png" class="img-fluid mx-auto helfer-wireframe-image">
                 </div>
             </div>
-            <div class="main-container d-flex w-100 mx-auto flex-row justify-content-start align-items-start" style="gap: 1.5rem;">
+            <div class="main-container d-flex w-100 mx-auto flex-row justify-content-start align-items-start mobile-switch-direction-container" style="gap: 1.5rem;">
                 <div class="col-lg-4 py-2">
                     <img src="../images/helfer/helfer_trainer_wireframe/Desktop - 8.png" class="img-fluid mx-auto helfer-wireframe-image">
                 </div>
@@ -255,7 +307,7 @@
                     <img src="../images/helfer/helfer_trainer_wireframe/Desktop - 9.png" class="img-fluid mx-auto helfer-wireframe-image">
                 </div>
             </div>
-            <div class="main-container d-flex w-100 mx-auto flex-row justify-content-start align-items-start" style="gap: 1.5rem;">
+            <div class="main-container d-flex w-100 mx-auto flex-row justify-content-start align-items-start mobile-switch-direction-container" style="gap: 1.5rem;">
                 <div class="col-lg-4 py-2">
                     <img src="../images/helfer/helfer_trainer_wireframe/Desktop - 10.png" class="img-fluid mx-auto helfer-wireframe-image">
                 </div>
@@ -266,7 +318,7 @@
                     <img src="../images/helfer/helfer_trainer_wireframe/Desktop - 12.png" class="img-fluid mx-auto helfer-wireframe-image">
                 </div>
             </div>
-            <div class="main-container d-flex w-100 mx-auto flex-row justify-content-start align-items-start" style="gap: 1.5rem;">
+            <div class="main-container d-flex w-100 mx-auto flex-row justify-content-start align-items-start mobile-switch-direction-container" style="gap: 1.5rem;">
                 <div class="col-lg-4 py-2">
                     <img src="../images/helfer/helfer_trainer_wireframe/Desktop - 13.png" class="img-fluid mx-auto helfer-wireframe-image">
                 </div>
@@ -284,7 +336,7 @@
                 <h2 class="text-start limit-text-width">High fidelity app mockup, prototype</h2>
             </div>
 
-            <div class="main-container d-flex w-100 mx-auto flex-row justify-content-between align-items-center">
+            <div class="main-container d-flex w-100 mx-auto flex-row justify-content-between align-items-center mobile-switch-direction-container">
                 <div class="main-container d-flex w-100 mx-auto flex-column justify-content-start align-items-center" style="gap: 1.5rem;">
                     <p>CREATION OF AN EXERCISE</p>
                     <div class="helfer-screen-player-container">
@@ -337,15 +389,15 @@
         </div>
 
         <div class="main-container d-flex w-100 h-auto mx-auto flex-column justify-content-center align-items-start" style="gap: 1.5rem;">
-            <div id="scrollTrainee" class="container d-flex flex-row justify-content-between align-items-end py-5">
-                <h1 class="text-start">Trainee app&nbsp;:</h1>
+            <div id="scrollTrainee" class="container d-flex flex-row justify-content-between align-items-end py-5 mobile-switch-direction-container">
+                <h1 class="text-start">Trainee&nbsp;app&nbsp;:</h1>
                 <div class="d-flex flex-row">
                     <a class="nav-link p-0" href="#scrollTrainer">
                         <p class="text-start">See Trainer app&nbsp;↑</p>
                     </a>
                 </div>
             </div>
-            <div id="helfer-preview-container" class="container d-flex flex-row justify-content-center align-items-center py-5">
+            <div class="helfer-preview-container container d-flex flex-row justify-content-center align-items-center py-5">
                 <img id="helfer-trainee-preview-image-1" src="../images/helfer/iphone-trainee/iPhone12_12Pro6.png" class="helfer-preview-image" alt="" />
                 <img id="helfer-trainee-preview-image-2" src="../images/helfer/iphone-trainee/iPhone12_12Pro7.png" class="helfer-preview-image" alt="" />
                 <img id="helfer-trainee-preview-image-3" src="../images/helfer/iphone-trainee/iPhone12_12Pro3.png" class="helfer-preview-image" alt="" />
@@ -413,7 +465,7 @@
             </div>
         </div>
 
-        <div class="main-container d-flex w-100 mx-auto flex-row justify-content-start align-items-start" style="gap: 1.5rem;">
+        <div class="main-container d-flex w-100 mx-auto flex-row justify-content-start align-items-start mobile-switch-direction-container" style="gap: 1.5rem;">
             <div class="container d-flex flex-column justify-content-center align-items-center" style="gap: 1.5rem;">
                 <img src="../images/helfer/trainee_initial_designs/Login.png" class="first-design-image img-fluid mx-auto" alt="" />
                 <img src="../images/helfer/trainee_initial_designs/Search (results).png" class="first-design-image img-fluid mx-auto" alt="" />
@@ -441,7 +493,7 @@
                 <h2 class="text-start limit-text-width">High fidelity app mockup, prototype</h2>
             </div>
 
-            <div class="main-container d-flex w-100 mx-auto flex-row justify-content-between align-items-center">
+            <div class="main-container d-flex w-100 mx-auto flex-row justify-content-between align-items-center mobile-switch-direction-container">
                 <div class="main-container d-flex w-100 mx-auto flex-column justify-content-start align-items-center" style="gap: 1.5rem;">
                     <p>FINDING COACH, BUYING TRAINING PROGRAM</p>
                     <div class="helfer-screen-player-container">

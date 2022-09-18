@@ -11,7 +11,7 @@
     border-radius: 2rem;*/
 }
 
-#helfer-preview-container {
+.helfer-preview-container {
     padding-top: 6rem !important;
     perspective: 1320px;
 }
