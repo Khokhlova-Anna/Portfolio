@@ -187,7 +187,7 @@ body {
 
     #btn-back-to-top {
         position: fixed;
-        bottom: 13.4rem;
+        bottom: 2rem;
         right: 2rem;
         display: none;
         z-index: 10;
